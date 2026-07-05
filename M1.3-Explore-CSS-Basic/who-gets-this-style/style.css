@@ -1,0 +1,11 @@
+p{
+    background-color: green;
+}
+
+.highlight, .error{
+    background-color: gold;
+    border: 2px solid red;
+}
+#unique {
+    background-color: aqua;
+}

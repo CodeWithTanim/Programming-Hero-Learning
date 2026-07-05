@@ -1,0 +1,17 @@
+.blog {
+    background-color: aqua;
+    width: 400px;
+    margin: 50px;
+    box-shadow: 10px 5px  yellow;
+}
+
+header{
+    background-color: blueviolet;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: center; */
+    /* background-position: top center; */
+    /* background-image: url(formula1.jpg); */
+    background-image: url(../images/flowers.jpg);
+}
