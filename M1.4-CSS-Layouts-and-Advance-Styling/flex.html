@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <link rel="stylesheet" href="styles/nav.css">
+    <style>
+        .container {
+            display: flex;
+            /* flex-direction: column; */
+            /* flex-direction: column-reverse; */
+            /* flex-direction: row-reverse; */
+            /* gap: 20px; */
+            /* justify-content: start; */
+            /* justify-content: end; */
+            /* justify-content: center; */
+            /* justify-content: space-between; */
+            justify-content: space-around;
+
+        }
+
+        .box {
+            border: 3px solid blue;
+            height: 100px;
+            /* display: inline; */
+            font-size: 2rem;
+
+        }
+
+        div {
+            font-size: 2rem;
+        }
+
+        .user-container {
+            display: flex;
+            justify-content: space-around;
+            gap: 20px;
+            flex-wrap: wrap;
+
+        }
+
+        .user {
+            border: 4px solid red;
+            height: 100px;
+        }
+
+        .pic-container {
+            display: flex;
+            border: 3px solid green;
+            justify-content: center;
+            align-items: center;
+            height: 500px;
+        }
+
+        .picture {
+            width: 200px;
+            height: 200px;
+            border: 3px solid purple;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <!-- <li><a href=""></a></li> -->
+            <li><a href="flex.html">Flex</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="nav.html">Navigation</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+            <li><a href=""></a></li>
+        </ul>
+    </nav>
+    <!-- div>p -->
+    <!-- div>article>section>h2 -->
+    <!-- div>article*3>section>h2 -->
+    <!-- div>article*3>section>h2+p -->
+    <!-- .container -->
+    <!-- .container>h2>.header#first -->
+    <!-- ul>li*5 -->
+    <!-- ul>.container>li.item*5 -->
+    <!-- ul>.container>li.item*5{item} -->
+    <!-- ul>.container>li.item*5{item - $} -->
+
+    <div class="container">
+        <div class="box">box * 1</div>
+        <div class="box">box * 2</div>
+        <div class="box">box * 3</div>
+        <div class="box">box * 4</div>
+        <div class="box">box * 3</div>
+        <div class="box">box * 4</div>
+        <div class="box">box * 5</div>
+    </div>
+    <!-- .user-container>.user*5{user-$} -->
+    <div class="user-container">
+        <div class="user">user-1</div>
+        <div class="user">user-2</div>
+        <div class="user">user-3</div>
+        <div class="user">user-4</div>
+        <div class="user">user-3</div>
+        <div class="user">user-4</div>
+        <div class="user">user-3</div>
+        <div class="user">user-4</div>
+        <div class="user">user-3</div>
+        <div class="user">user-4</div>
+        <div class="user">user-3</div>
+        <div class="user">user-4</div>
+        <div class="user">user-3</div>
+        <div class="user">user-4</div>
+        <div class="user">user-3</div>
+        <div class="user">user-4</div>
+        <div class="user">user-3</div>
+        <div class="user">user-4</div>
+        <div class="user">user-3</div>
+        <div class="user">user-4</div>
+        <div class="user">user-3</div>
+        <div class="user">user-4</div>
+        <div class="user">user-3</div>
+        <div class="user">user-4</div>
+        <div class="user">user-3</div>
+        <div class="user">user-4</div>
+        <div class="user">user-3</div>
+        <div class="user">user-4</div>
+        <div class="user">user-3</div>
+        <div class="user">user-4</div>
+        <div class="user">user-5</div>
+    </div>
+    <!-- .pic-container>.pic{picture-$} -->
+    <div class="pic-container">
+        <div class="picture">picture-1</div>
+    </div>
+</body>
+
+</html>
