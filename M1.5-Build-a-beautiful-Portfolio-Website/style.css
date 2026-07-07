@@ -1,0 +1,308 @@
+/* Reset Style */
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+header {
+    /* background-color: red; */
+
+}
+
+nav {
+    /* background-color: rgb(165, 161, 161); */
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    padding: 12px 0;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    gap: 10px;
+    align-items: center;
+}
+
+ul li a {
+    text-decoration: none;
+}
+
+.class {
+    font-weight: bold;
+    font-size: 32px;
+
+}
+
+.logo-r {
+    color: #fd6e0a;
+}
+
+/* Common Style */
+.common-button {
+    background-color: #fd6e0a;
+    padding: 10px 20px;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 22px;
+    color: white;
+    /* outline: none; */
+    border: none;
+    cursor: pointer;
+
+}
+
+.outline-button {
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 22px;
+    color: #fd6e0a;
+    /* outline: none; */
+    border: 1px solid #fd6e0a;
+    cursor: pointer;
+
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Hero Section Style */
+
+.hero-parent-root {
+    background-color: #FFF8F3;
+}
+
+.hero-parent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.hero-left h2 {
+    font-weight: bold;
+    font-size: 40px;
+    margin: 12px 0;
+}
+
+.hero-left-p1 {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.hero-left p {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.hero-left-button-parent {
+    margin-top: 12px;
+}
+
+/* About Us CSS */
+.about-parent {
+    background-color: #FFF8F3;
+    margin: 70px auto;
+    border-radius: 10px;
+    padding: 75px;
+    text-align: center;
+}
+
+.about-parent p {
+    margin: 20px 0;
+}
+
+.about-box-parent {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.about-box-parent .box {
+    background-color: #faf3ed;
+}
+
+/* What I do Section CSS */
+.what-i-do-parent {
+    margin: 60px auto;
+    text-align: center;
+}
+
+.what-i-do-parent-card-container {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.what-i-do-parent-card-container .what-i-do-card {
+    border: 2px solid #fd6e0a;
+    padding: 8px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+
+.what-i-do-parent-card-container .what-i-do-card h2 {
+    margin: 10px 0;
+}
+
+.what-i-do-parent-card-container .what-i-do-card p {
+    color: #757575;
+    font-size: 15px;
+}
+
+/* A summary of My Resume */
+
+.resume-root {
+    margin: 80px auto;
+}
+
+.resume-root>h2 {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.resume-parent {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.resume-left,
+.resume-right {
+    width: 50%;
+}
+
+.resume-card {
+    padding: 25px 0;
+    border-bottom: 1px solid #D1D1D1;
+}
+
+.resume-card h2 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.resume-card h3 {
+    color: #757575;
+}
+
+/* CV Download Button */
+.cv-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+}
+
+/* Amazing Work Section CSS */
+
+.my-amazing-parent {
+    text-align: center;
+
+}
+
+.gallary {
+    margin-top: 20px;
+    display: grid;
+    gap: 12px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 250px;
+    grid-template-areas:
+        "one two three"
+        "four two six"
+        "four five six";
+}
+
+.gallary img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.box-1 {
+    grid-area: one;
+}
+
+.box-2 {
+    grid-area: two;
+}
+
+.box-3 {
+    grid-area: three;
+}
+
+.box-4 {
+    grid-area: four;
+}
+
+.box-5 {
+    grid-area: five;
+}
+
+.box-6 {
+    grid-area: six;
+}
+
+
+/* Footer CSS */
+
+footer{
+    text-align: center;
+    /* important */
+    margin-top: 70px !important;
+    /* padding-top: 70px; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    gap: 15px;
+    background-color: #faf3ed;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+footer form{
+    padding: 20px;
+}
+
+footer form input, footer form textarea{
+    border: none;
+    outline: none;
+    background-color: white;
+    padding: 8px 15px;
+    border-radius: 8px;
+    display: block;
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+.footer-left h2{
+    margin: 10px 0;
+    text-align: left;
+}
+
+.footer-left p{
+    margin: 25px 0;
+    text-align: left;
+}
+
+.social-icon{
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    margin-top: 20px;
+}
