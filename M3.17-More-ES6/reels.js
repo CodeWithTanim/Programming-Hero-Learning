@@ -1,0 +1,1 @@
+const arrowFn = (a, a, a) => console.log(a);
