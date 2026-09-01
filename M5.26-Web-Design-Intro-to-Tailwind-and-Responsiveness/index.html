@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
+        integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+</head>
+<title>Nature's Platter</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="bg-[#F1EEE7]">
+        <!-- Nav -->
+        <nav class="grid grid-cols-2 md:grid-cols-3 container mx-auto pt-4">
+            <!-- Nav Logo -->
+            <img src="./assets/nav-logo.png" alt="NavLogo" class="w-30 h-auto">
+
+            <!-- Nav List -->
+            <ul class="hidden md:flex gap-4 justify-center items-center">
+                <li><a href="">Products</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+
+            <!-- Nav Icons & Buttons -->
+            <div class="hidden md:flex gap-4 items-center">
+                <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                <span><i class="fa-solid fa-cart-shopping"></i></span>
+
+                <!-- Buttons -->
+                <button class="rounded border border-green-500 font-semibold px-3 py-1">Login</button>
+                <button class="rounded bg-green-500 text-white font-semibold px-3 py-1">Register</button>
+            </div>
+            <span class="inline-block md:hidden text-right"><i class="fa-solid fa-bars"></i></span>
+        </nav>
+
+        <!-- Hero Section-->
+        <section class="text-center py-5">
+            <div class="max-w-[30%] mx-auto">
+                <h2 class="font-bold text-4xl mb-4">Freshness <span class="text-green-500">You Can <br>
+                        Count</span> On, Prices You’ll Love!</h2>
+                <p>Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you
+                    covered every day!</p>
+            </div>
+            <img src="./assets/Hero Section 1.png" alt="Hero Section Image"
+                class="mx-auto max-w-112.5 md:max-w-111.5 h-auto">
+        </section>
+    </header>
+
+    <!-- Services -->
+    <section class="container mx-auto my-20">
+        <h2 class="text-green-500 font-bold text-4xl mb-3">Services</h2>
+
+        <div class="grid grid-cols-3 gap-4 ">
+            <div class="text-center bg-[#EFEBE3] rounded-md p-4 space-y-4">
+                <div class="bg-white rounded-full h-30 w-30 flex justify-center items-center p-4 mx-auto">
+                    <img src="./assets/service.png" alt="">
+                </div>
+                <h2 class="font-semibold text-2xl">24/7 Services </h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium distinctio eligendi tempora vel
+                    non sit ut.</p>
+            </div>
+            <div class="text-center bg-[#EFEBE3] rounded-md p-4 space-y-4">
+                <div class="bg-white rounded-full h-30 w-30 flex justify-center items-center p-4 mx-auto">
+                    <img src="./assets/delivery.png" alt="">
+                </div>
+                <h2 class="font-semibold text-2xl">Fast Delivery</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium distinctio eligendi tempora vel
+                    non sit ut.</p>
+            </div>
+            <div class="text-center bg-[#EFEBE3] rounded-md p-4 space-y-4">
+                <div class="bg-white rounded-full h-30 w-30 flex justify-center items-center p-4 mx-auto">
+                    <img src="./assets/products.png" alt="">
+                </div>
+                <h2 class="font-semibold text-2xl">Healthy Products </h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium distinctio eligendi tempora vel
+                    non sit ut.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Products -->
+    <section class="bg-[#f5f3ed] py-20">
+        <div class="container mx-auto">
+            <h2 class="text-green-500 font-bold text-4xl mb-3">Popular Products</h2>
+            <div class="grid grid-cols-12 gap-4">
+                <!-- 30% -->
+                <div class="col-span-12 md:col-span-3 space-y-2 bg-linear-to-br from-lime-500 to-lime-200 p-5 rounded">
+                    <h2 class="font-semibold text-2xl text-white">30% off</h2>
+                    <p class="text-xs">Discover a world of treats, toys, and essentials handpicked for.</p>
+                    <button class="rounded border border-green-500 bg-white font-semibold px-3 py-1">Buy Now</button>
+                    <img src="./assets/Mask group.png" alt="" class="h-70 -mt-27.5">
+                </div>
+
+                <!-- 70% -->
+                <div class="col-span-12 md:col-span-9 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
+                    <div class="flex gap-2 p-4 rounded border border-gray-100 bg-white">
+                        <img src="./assets/onion.png" alt="" class="w-12 h-12 object-contain bg-gray-100 rounded">
+                        <div class="space-y-2">
+                            <span class="text-xs">⭐ 4.5</span>
+                            <h2 class="font-bold text-shadow-md">Onion 1 KG</h2>
+                            <p>$39.99</p>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-2 p-4 rounded border border-gray-100 bg-white">
+                        <img src="./assets/tomato.png" alt="" class="w-12 h-12 object-contain bg-gray-100 rounded">
+                        <div class="space-y-2">
+                            <span class="text-xs">⭐ 4.5</span>
+                            <h2 class="font-bold text-shadow-md">Tomato 500 g</h2>
+                            <p>$39.99</p>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-2 p-4 rounded border border-gray-100 bg-white">
+                        <img src="./assets/potato.png" alt="" class="w-12 h-12 object-contain bg-gray-100 rounded">
+                        <div class="space-y-2">
+                            <span class="text-xs">⭐ 4.5</span>
+                            <h2 class="font-bold text-shadow-md">Potato 1 KG</h2>
+                            <p>$39.99</p>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-2 p-4 rounded border border-gray-100 bg-white">
+                        <img src="./assets/tomato.png" alt="" class="w-12 h-12 object-contain bg-gray-100 rounded">
+                        <div class="space-y-2">
+                            <span class="text-xs">⭐ 4.5</span>
+                            <h2 class="font-bold text-shadow-md">Tomato 500 g</h2>
+                            <p>$39.99</p>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-2 p-4 rounded border border-gray-100 bg-white">
+                        <img src="./assets/onion.png" alt="" class="w-12 h-12 object-contain bg-gray-100 rounded">
+                        <div class="space-y-2">
+                            <span class="text-xs">⭐ 4.5</span>
+                            <h2 class="font-bold text-shadow-md">Onion 1 KG</h2>
+                            <p>$39.99</p>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-2 p-4 rounded border border-gray-100 bg-white">
+                        <img src="./assets/tomato.png" alt="" class="w-12 h-12 object-contain bg-gray-100 rounded">
+                        <div class="space-y-2">
+                            <span class="text-xs">⭐ 4.5</span>
+                            <h2 class="font-bold text-shadow-md">Tomato 500 g</h2>
+                            <p>$39.99</p>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-2 p-4 rounded border border-gray-100 bg-white">
+                        <img src="./assets/onion.png" alt="" class="w-12 h-12 object-contain bg-gray-100 rounded">
+                        <div class="space-y-2">
+                            <span class="text-xs">⭐ 4.5</span>
+                            <h2 class="font-bold text-shadow-md">Onion 1 KG</h2>
+                            <p>$39.99</p>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-2 p-4 rounded border border-gray-100 bg-white">
+                        <img src="./assets/potato.png" alt="" class="w-12 h-12 object-contain bg-gray-100 rounded">
+                        <div class="space-y-2">
+                            <span class="text-xs">⭐ 4.5</span>
+                            <h2 class="font-bold text-shadow-md">Potato 1 KG</h2>
+                            <p>$39.99</p>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-2 p-4 rounded border border-gray-100 bg-white">
+                        <img src="./assets/potato.png" alt="" class="w-12 h-12 object-contain bg-gray-100 rounded">
+                        <div class="space-y-2">
+                            <span class="text-xs">⭐ 4.5</span>
+                            <h2 class="font-bold text-shadow-md">Potato 1 KG</h2>
+                            <p>$39.99</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Arrival & Offers -->
+    <section class="container mx-auto my-20">
+        <h2 class="text-green-500 font-bold text-4xl mb-3">Arrival & Offers</h2>
+
+        <div class="grid grid-cols-12 gap-4">
+
+            <!-- Dawaat -->
+            <div class="col-span-12 md:col-span-7 bg-[#0B5D16] rounded-xl p-4 flex justify-between items-center">
+                <div class="space-y-4">
+                    <img src="./assets/dawat-logo.png" alt="" class="w-24">
+                    <button class="rounded-md bg-[#75C96B] text-white px-4 py-2 text-sm">
+                        Cook Exotic Dishes
+                    </button>
+                    <h2 class="text-white text-xl">UP to <span class="font-bold">20% OFF</span></h2>
+                </div>
+
+                <img src="./assets/offers-1.png" alt="" class="h-32">
+            </div>
+
+            <!-- India Gate -->
+            <div class="col-span-12 md:col-span-5 bg-[#17316D] rounded-xl p-4 flex justify-between items-center">
+                <div class="space-y-4">
+                    <img src="./assets/gate-logo.png" alt="" class="w-24">
+                    <button class="rounded-md bg-[#34528F] text-white px-4 py-2 text-sm">
+                        World's No.1 Rice
+                    </button>
+                    <h2 class="text-white text-xl">UP to <span class="font-bold">40% OFF</span></h2>
+                </div>
+
+                <img src="./assets/offers-2.png" alt="" class="h-32">
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Newsletter -->
+    <section class="container mx-auto my-20">
+        <div class="bg-[#EFEBE3] rounded-xl p-8 flex flex-col md:flex-row items-center justify-between">
+
+            <img src="./assets/grocery-basket.png" alt="" class="w-64">
+
+            <div class="space-y-4">
+                <h2 class="font-bold text-2xl">Get Grocery News!</h2>
+                <p class="text-sm">Exclusive training tips, ticks, product deals and more.</p>
+
+                <input type="text" placeholder="Enter email..." class="bg-white rounded-md px-4 py-3 w-full md:w-80">
+
+                <button class="bg-green-600 text-white rounded-md px-5 py-2 text-sm">
+                    Subscribe
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="bg-green-700 text-white">
+        <div class="container mx-auto py-12">
+
+            <div class="grid grid-cols-12 gap-4">
+
+                <!-- Logo -->
+                <div class="col-span-12 md:col-span-5 space-y-3">
+                    <img src="./assets/logo.png" alt="" class="w-32">
+
+                    <p class="text-xs max-w-48">
+                        Discover a world of treats, toys, and essentials handpicked for your furry friends.
+                    </p>
+                </div>
+
+                <!-- Links -->
+                <div class="col-span-12 md:col-span-4 space-y-4">
+                    <h2 class="font-semibold">Product</h2>
+                    <p class="text-sm">Services</p>
+                    <p class="text-sm">Contact us</p>
+                </div>
+
+                <!-- Social -->
+                <div class="col-span-12 md:col-span-3 space-y-4">
+                    <h2 class="font-semibold">Follow Us</h2>
+
+                    <div class="flex gap-4">
+                        <a href="#">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </footer>
+</body>
+
+</html>

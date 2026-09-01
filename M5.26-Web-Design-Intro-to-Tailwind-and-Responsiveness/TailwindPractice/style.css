@@ -1,0 +1,15 @@
+.test {
+    font-size: 120px;
+    background-color: greenyellow;
+    color: red
+
+}
+
+@media (max-width: 800px) {
+    .test {
+    font-size: 90px;
+    background-color: rgb(33, 138, 138);
+    color: rgb(30, 255, 0)
+
+}
+}

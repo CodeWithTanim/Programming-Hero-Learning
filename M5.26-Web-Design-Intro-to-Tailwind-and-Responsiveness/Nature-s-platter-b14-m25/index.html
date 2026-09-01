@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature's Platter</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    
+    <!-- Hero Section -->
+    <section class="min-h-screen bg-gray-50 flex items-center justify-center px-4 py-20">
+        <div class="max-w-4xl w-full">
+            <!-- Text Content -->
+            <div class="text-center mb-12">
+                <h1 class="text-5xl md:text-6xl font-bold mb-4 leading-tight">
+                    <span class="text-gray-900">Freshness</span>
+                    <span class="text-green-500"> You Can</span>
+                    <br />
+                    <span class="text-green-500">Count</span>
+                    <span class="text-gray-900"> On, Prices You'll Love!</span>
+                </h1>
+                <p class="text-gray-600 text-base md:text-lg max-w-2xl mx-auto">
+                    Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we've got you covered every day!
+                </p>
+            </div>
+
+            <!-- Image Content -->
+            <div class="flex justify-center">
+                <img 
+                    src="./assets/Hero Section-large.png" 
+                    alt="Fresh vegetables in shopping bag" 
+                    class="w-full max-w-xl object-contain"
+                />
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-16 px-4 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <!-- Section Title -->
+            <h2 class="text-3xl font-bold text-green-600 mb-12">Services</h2>
+
+            <!-- Services Cards Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1: 24/7 Services -->
+                <div class="bg-yellow-50 rounded-lg p-8 text-center">
+                    <div class="mb-6 flex justify-center">
+                        <div class="w-32 h-32 bg-green-100 rounded-full flex items-center justify-center">
+                            <img class="w-20 h-20" src="./assets/service.png" alt="24/7 Services Icon" class="w-10 h-10" />
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">24/7 Services</h3>
+                    <p class="text-gray-600 text-sm">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                    </p>
+                </div>
+
+                <!-- Card 2: Fast Delivery -->
+                <div class="bg-yellow-50 rounded-lg p-8 text-center">
+                    <div class="mb-6 flex justify-center">
+                        <div class="w-32 h-32 bg-green-100 rounded-full flex items-center justify-center">
+                            <img class="w-20 h-20" src="./assets/delivery.png" alt="Fast Delivery Icon" class="w-10 h-10" />
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Fast Delivery</h3>
+                    <p class="text-gray-600 text-sm">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                    </p>
+                </div>
+
+                <!-- Card 3: Healthy Products -->
+                <div class="bg-yellow-50 rounded-lg p-8 text-center">
+                    <div class="mb-6 flex justify-center">
+                        <div class="w-32 h-32 bg-green-100 rounded-full flex items-center justify-center">
+                            <img class="w-20 h-20" src="./assets/products.png" alt="Healthy Products Icon" class="w-10 h-10" />
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Healthy Products</h3>
+                    <p class="text-gray-600 text-sm">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Products Section -->
+    <section class="py-16 px-4 bg-yellow-50">
+        <div class="max-w-7xl mx-auto">
+            <!-- Section Title -->
+            <h2 class="text-3xl font-bold text-green-600 mb-12">Popular Products</h2>
+
+            <!-- Main Container -->
+            <div class="grid grid-cols-1 lg:grid-cols-4 gap-6">
+                <!-- Promotional Banner -->
+                <div class="lg:col-span-1 bg-gradient-to-b from-lime-400 to-green-500 rounded-2xl p-6 text-white flex flex-col relative overflow-hidden min-h-[280px]">
+                    <div class="relative z-10">
+                        <h3 class="text-3xl font-bold mb-3">30% off</h3>
+                        <p class="text-sm mb-5 leading-relaxed max-w-[200px]">
+                            Discover a world of treats, toys, and essentials handpicked for
+                        </p>
+                        <button class="bg-white text-gray-900 font-semibold py-2.5 px-6 rounded-lg hover:bg-gray-100 transition text-sm">
+                            Buy Now
+                        </button>
+                    </div>
+                    <img src="./assets/Mask group.png" alt="Fresh vegetables" class="absolute bottom-0 right-0 w-[70%] object-contain" />
+                </div>
+
+                <!-- Products Grid -->
+                <div class="lg:col-span-3 grid grid-cols-2 sm:grid-cols-3 gap-4">
+                    <!-- Product Card 1 -->
+                    <div class="bg-white rounded-xl p-4 border border-gray-100 flex items-center gap-3">
+                        <img src="./assets/onion.png" alt="Onion 1KG" class="w-14 h-14 object-contain flex-shrink-0" />
+                        <div class="text-left">
+                            <div class="flex items-center gap-1 mb-1">
+                                <span class="text-yellow-400 text-xs">★</span>
+                                <span class="text-gray-700 text-xs">4.5</span>
+                            </div>
+                            <h4 class="font-semibold text-gray-900 text-xs leading-tight">Onion 1 KG</h4>
+                            <p class="text-gray-900 font-bold text-sm">$39.99</p>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 2 -->
+                    <div class="bg-white rounded-xl p-4 border border-gray-100 flex items-center gap-3">
+                        <img src="./assets/tomato.png" alt="Tomato 500g" class="w-14 h-14 object-contain flex-shrink-0" />
+                        <div class="text-left">
+                            <div class="flex items-center gap-1 mb-1">
+                                <span class="text-yellow-400 text-xs">★</span>
+                                <span class="text-gray-700 text-xs">4.5</span>
+                            </div>
+                            <h4 class="font-semibold text-gray-900 text-xs leading-tight">Tomato 500g</h4>
+                            <p class="text-gray-900 font-bold text-sm">$33.99</p>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 3 -->
+                    <div class="bg-white rounded-xl p-4 border border-gray-100 flex items-center gap-3">
+                        <img src="./assets/potato.png" alt="Potato 1KG" class="w-14 h-14 object-contain flex-shrink-0" />
+                        <div class="text-left">
+                            <div class="flex items-center gap-1 mb-1">
+                                <span class="text-yellow-400 text-xs">★</span>
+                                <span class="text-gray-700 text-xs">4.5</span>
+                            </div>
+                            <h4 class="font-semibold text-gray-900 text-xs leading-tight">Potato 1KG</h4>
+                            <p class="text-gray-900 font-bold text-sm">$39.99</p>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 4 -->
+                    <div class="bg-white rounded-xl p-4 border border-gray-100 flex items-center gap-3">
+                        <img src="./assets/tomato.png" alt="Tomato 500g" class="w-14 h-14 object-contain flex-shrink-0" />
+                        <div class="text-left">
+                            <div class="flex items-center gap-1 mb-1">
+                                <span class="text-yellow-400 text-xs">★</span>
+                                <span class="text-gray-700 text-xs">4.5</span>
+                            </div>
+                            <h4 class="font-semibold text-gray-900 text-xs leading-tight">Tomato 500g</h4>
+                            <p class="text-gray-900 font-bold text-sm">$33.99</p>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 5 -->
+                    <div class="bg-white rounded-xl p-4 border border-gray-100 flex items-center gap-3">
+                        <img src="./assets/onion.png" alt="Onion 1KG" class="w-14 h-14 object-contain flex-shrink-0" />
+                        <div class="text-left">
+                            <div class="flex items-center gap-1 mb-1">
+                                <span class="text-yellow-400 text-xs">★</span>
+                                <span class="text-gray-700 text-xs">4.5</span>
+                            </div>
+                            <h4 class="font-semibold text-gray-900 text-xs leading-tight">Onion 1 KG</h4>
+                            <p class="text-gray-900 font-bold text-sm">$39.99</p>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 6 -->
+                    <div class="bg-white rounded-xl p-4 border border-gray-100 flex items-center gap-3">
+                        <img src="./assets/potato.png" alt="Potato 1KG" class="w-14 h-14 object-contain flex-shrink-0" />
+                        <div class="text-left">
+                            <div class="flex items-center gap-1 mb-1">
+                                <span class="text-yellow-400 text-xs">★</span>
+                                <span class="text-gray-700 text-xs">4.5</span>
+                            </div>
+                            <h4 class="font-semibold text-gray-900 text-xs leading-tight">Potato 1KG</h4>
+                            <p class="text-gray-900 font-bold text-sm">$39.99</p>
+                        </div>
+                    </div>
+
+                     <!-- Product Card 7 -->
+                    <div class="bg-white rounded-xl p-4 border border-gray-100 flex items-center gap-3">
+                        <img src="./assets/onion.png" alt="Onion 1KG" class="w-14 h-14 object-contain flex-shrink-0" />
+                        <div class="text-left">
+                            <div class="flex items-center gap-1 mb-1">
+                                <span class="text-yellow-400 text-xs">★</span>
+                                <span class="text-gray-700 text-xs">4.5</span>
+                            </div>
+                            <h4 class="font-semibold text-gray-900 text-xs leading-tight">Onion 1 KG</h4>
+                            <p class="text-gray-900 font-bold text-sm">$39.99</p>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 8 -->
+                    <div class="bg-white rounded-xl p-4 border border-gray-100 flex items-center gap-3">
+                        <img src="./assets/potato.png" alt="Potato 1KG" class="w-14 h-14 object-contain flex-shrink-0" />
+                        <div class="text-left">
+                            <div class="flex items-center gap-1 mb-1">
+                                <span class="text-yellow-400 text-xs">★</span>
+                                <span class="text-gray-700 text-xs">4.5</span>
+                            </div>
+                            <h4 class="font-semibold text-gray-900 text-xs leading-tight">Potato 1KG</h4>
+                            <p class="text-gray-900 font-bold text-sm">$39.99</p>
+                        </div>
+                    </div>
+                    <!-- Product Card 9 -->
+                    <div class="bg-white rounded-xl p-4 border border-gray-100 flex items-center gap-3">
+                        <img src="./assets/potato.png" alt="Potato 1KG" class="w-14 h-14 object-contain flex-shrink-0" />
+                        <div class="text-left">
+                            <div class="flex items-center gap-1 mb-1">
+                                <span class="text-yellow-400 text-xs">★</span>
+                                <span class="text-gray-700 text-xs">4.5</span>
+                            </div>
+                            <h4 class="font-semibold text-gray-900 text-xs leading-tight">Potato 1KG</h4>
+                            <p class="text-gray-900 font-bold text-sm">$39.99</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
