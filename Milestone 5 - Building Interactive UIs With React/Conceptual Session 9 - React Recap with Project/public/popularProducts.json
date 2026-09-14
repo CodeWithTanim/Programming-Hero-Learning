@@ -1,0 +1,56 @@
+[
+  {
+    "productImage": "https://images.unsplash.com/photo-1542291026-7eec264c27ff",
+    "title": "Running Shoes",
+    "price": 89.99,
+    "rating": 4.5
+  },
+  {
+    "productImage": "https://images.unsplash.com/photo-1523275335684-37898b6baf30",
+    "title": "Classic Wrist Watch",
+    "price": 129.99,
+    "rating": 4.7
+  },
+  {
+    "productImage": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e",
+    "title": "Wireless Headphones",
+    "price": 59.99,
+    "rating": 4.3
+  },
+  {
+    "productImage": "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f",
+    "title": "Digital Camera",
+    "price": 499.99,
+    "rating": 4.8
+  },
+  {
+    "productImage": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9",
+    "title": "Smartphone",
+    "price": 699.99,
+    "rating": 4.6
+  },
+  {
+    "productImage": "https://images.unsplash.com/photo-1546435770-a3e426bf472b",
+    "title": "Bluetooth Speaker",
+    "price": 79.99,
+    "rating": 4.4
+  },
+  {
+    "productImage": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085",
+    "title": "Coffee Maker",
+    "price": 149.99,
+    "rating": 4.5
+  },
+  {
+    "productImage": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab",
+    "title": "Cotton T-Shirt",
+    "price": 24.99,
+    "rating": 4.2
+  },
+  {
+    "productImage": "https://images.unsplash.com/photo-1560343090-f0409e92791a",
+    "title": "Leather Backpack",
+    "price": 89.99,
+    "rating": 4.6
+  }
+]
