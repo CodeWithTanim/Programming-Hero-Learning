@@ -168,6 +168,10 @@ Building a full-featured fantasy cricket player selection Single Page Applicatio
 
 Building a modern "Explore the Technologies" personalized tech-stack builder application using React, TypeScript, and Vite. Features asynchronous API data fetching (`fetch('/technologies.json')`), stack management state (`stack`, `setStack`) with add, remove, and clear-all operations, duplicate detection with alert notifications via `react-toastify`, dynamic stack analytics, clean modular component architecture (`Navbar`, `Hero`, `Technologies`, `Footer`), TypeScript type safety (`Technology`), and responsive Tailwind CSS layout.
 
+### 🔹 `Milestone 6 Module 33 - Next.js Foundation and Routing`
+
+Comprehensive introduction to Next.js App Router architecture and routing fundamentals. Covers root layouts (`layout.js`), global styling (`globals.css`), custom 404 pages (`not-found.jsx`), static routing (`/about`, `/dashboard`, `/showcase`), dynamic route parameters (`/blogs/[postid]`), nested layouts, catch-all routing (`/docs`), server data fetching (`/users`, `/users/[userid]`), navigation with Next.js components (`Navbar`, `Post`), and Tailwind CSS integration.
+
 ---
 
 ## 📂 Repository Structure
@@ -1054,310 +1058,371 @@ Building a modern "Explore the Technologies" personalized tech-stack builder app
 │       │   ├── 🔷 spread.ts
 │       │   └── 🔷 ternary.ts
 │       └── 🔶 tsconfig.json
-└── 📁 Milestone 5 - Building Interactive UIs With React/
-    ├── 📁 Conceptual Session 8 - React Basic Concepts/
-    │   ├── 📁 public/
-    │   │   ├── 🎨 favicon.svg
-    │   │   └── 🎨 icons.svg
-    │   ├── 📁 src/
-    │   │   ├── 📁 assets/
-    │   │   │   ├── 🖼️ hero.png
-    │   │   │   ├── 🎨 react.svg
-    │   │   │   └── 🎨 vite.svg
-    │   │   ├── 📁 components/
-    │   │   │   ├── 📁 bestSelling/
-    │   │   │   │   ├── 🎨 BestSelling.css
-    │   │   │   │   └── ⚛️ BestSelling.tsx
-    │   │   │   ├── 📁 product/
-    │   │   │   │   ├── 🎨 Product.css
-    │   │   │   │   └── ⚛️ Product.tsx
-    │   │   │   └── 📁 products/
-    │   │   │       ├── 🎨 Products.css
-    │   │   │       └── ⚛️ Products.tsx
-    │   │   ├── 🎨 App.css
-    │   │   ├── ⚛️ App.tsx
-    │   │   ├── 🎨 index.css
-    │   │   ├── ⚛️ main.tsx
-    │   │   └── 🔷 type.ts
-    │   ├── 🙈 .gitignore
-    │   ├── 🔶 .oxlintrc.json
-    │   ├── 🌐 index.html
-    │   ├── 🔒 package-lock.json
-    │   ├── 📦 package.json
-    │   ├── 🔶 tsconfig.app.json
-    │   ├── 🔶 tsconfig.json
-    │   ├── 🔶 tsconfig.node.json
-    │   └── 🔷 vite.config.ts
-    ├── 📁 Conceptual Session 9 - React Recap with Project/
-    │   ├── 📁 public/
-    │   │   ├── 📁 assets/
-    │   │   │   ├── 🖼️ dawat-logo.png
-    │   │   │   ├── 🖼️ delivery.png
-    │   │   │   ├── 🖼️ footer-logo.png
-    │   │   │   ├── 🖼️ gate-logo.png
-    │   │   │   ├── 🖼️ grocery-basket.png
-    │   │   │   ├── 🖼️ Group 9181.png
-    │   │   │   ├── 🖼️ Hero Section 1.png
-    │   │   │   ├── 🖼️ Hero Section-large.png
-    │   │   │   ├── 🖼️ Mask group.png
-    │   │   │   ├── 🖼️ nav-logo.png
-    │   │   │   ├── 🖼️ offers-1.png
-    │   │   │   ├── 🖼️ offers-2.png
-    │   │   │   ├── 🖼️ onion.png
-    │   │   │   ├── 🖼️ popular.png
-    │   │   │   ├── 🖼️ potato.png
-    │   │   │   ├── 🖼️ products.png
-    │   │   │   ├── 🖼️ service.png
-    │   │   │   └── 🖼️ tomato.png
-    │   │   ├── 🎨 favicon.svg
-    │   │   ├── 🎨 icons.svg
-    │   │   ├── 🖼️ nav-logo.png
-    │   │   └── 🔶 popularProducts.json
-    │   ├── 📁 src/
-    │   │   ├── 📁 assets/
-    │   │   │   ├── 🖼️ dawat-logo.png
-    │   │   │   ├── 🖼️ delivery.png
-    │   │   │   ├── 🖼️ footer-logo.png
-    │   │   │   ├── 🖼️ gate-logo.png
-    │   │   │   ├── 🖼️ grocery-basket.png
-    │   │   │   ├── 🖼️ Group 9181.png
-    │   │   │   ├── 🖼️ Hero Section 1.png
-    │   │   │   ├── 🖼️ Hero Section-large.png
-    │   │   │   ├── 🖼️ hero.png
-    │   │   │   ├── 🖼️ Mask group.png
-    │   │   │   ├── 🖼️ nav-logo.png
-    │   │   │   ├── 🖼️ offers-1.png
-    │   │   │   ├── 🖼️ offers-2.png
-    │   │   │   ├── 🖼️ onion.png
-    │   │   │   ├── 🖼️ popular.png
-    │   │   │   ├── 🖼️ potato.png
-    │   │   │   ├── 🖼️ products.png
-    │   │   │   ├── 🎨 react.svg
-    │   │   │   ├── 🖼️ service.png
-    │   │   │   ├── 🖼️ tomato.png
-    │   │   │   └── 🎨 vite.svg
-    │   │   ├── 📁 components/
-    │   │   │   ├── ⚛️ Banner.tsx
-    │   │   │   ├── ⚛️ Cart.tsx
-    │   │   │   ├── ⚛️ Navbar.tsx
-    │   │   │   ├── ⚛️ PopularProductCard.tsx
-    │   │   │   ├── ⚛️ PopularProducts.tsx
-    │   │   │   └── ⚛️ Services.tsx
-    │   │   ├── 📁 types/
-    │   │   │   └── 🔷 product.ts
-    │   │   ├── ⚛️ App.tsx
-    │   │   ├── 🎨 index.css
-    │   │   └── ⚛️ main.tsx
-    │   ├── 🙈 .gitignore
-    │   ├── ⚡ eslint.config.js
-    │   ├── 🌐 index.html
-    │   ├── 🔒 package-lock.json
-    │   ├── 📦 package.json
-    │   ├── 🔶 tsconfig.app.json
-    │   ├── 🔶 tsconfig.json
-    │   ├── 🔶 tsconfig.node.json
-    │   └── 🔷 vite.config.ts
-    ├── 📁 Module 26-Web-Design-Intro-to-Tailwind-and-Responsiveness/
-    │   ├── 📁 assets/
-    │   │   ├── 🖼️ dawat-logo.png
-    │   │   ├── 🖼️ delivery.png
-    │   │   ├── 🖼️ footer-logo.png
-    │   │   ├── 🖼️ gate-logo.png
-    │   │   ├── 🖼️ grocery-basket.png
-    │   │   ├── 🖼️ Group 9181.png
-    │   │   ├── 🖼️ Hero Section 1.png
-    │   │   ├── 🖼️ Hero Section-large.png
-    │   │   ├── 🖼️ Mask group.png
-    │   │   ├── 🖼️ nav-logo.png
-    │   │   ├── 🖼️ offers-1.png
-    │   │   ├── 🖼️ offers-2.png
-    │   │   ├── 🖼️ onion.png
-    │   │   ├── 🖼️ popular.png
-    │   │   ├── 🖼️ potato.png
-    │   │   ├── 🖼️ products.png
-    │   │   ├── 🖼️ service.png
-    │   │   └── 🖼️ tomato.png
-    │   ├── 📁 Nature-s-platter-b14-m25/
-    │   │   ├── 🌐 index.html
-    │   │   └── 📄 Nature's Platter.fig
-    │   ├── 📁 TailwindPractice/
-    │   │   ├── 🌐 index.html
-    │   │   ├── 🎨 style.css
-    │   │   └── 🎨 tailwind.init.css
-    │   ├── 🌐 index.html
-    │   └── 🎨 tailwind.init.css
-    ├── 📁 Module 27-React-Code-Components-JSX-Props-and-Rendering/
-    │   ├── 📁 public/
-    │   │   ├── 🎨 favicon.svg
-    │   │   └── 🎨 icons.svg
-    │   ├── 📁 src/
-    │   │   ├── 📁 assets/
-    │   │   │   ├── 🖼️ hero.png
-    │   │   │   ├── 🎨 react.svg
-    │   │   │   └── 🎨 vite.svg
-    │   │   ├── 🎨 App.css
-    │   │   ├── ⚛️ App.tsx
-    │   │   ├── ⚛️ Book.tsx
-    │   │   ├── 🎨 index.css
-    │   │   ├── ⚛️ main.tsx
-    │   │   ├── ⚛️ Task.tsx
-    │   │   ├── ⚛️ Todo.tsx
-    │   │   ├── ⚛️ UserCard.tsx
-    │   │   └── ⚛️ Users.tsx
-    │   ├── 🙈 .gitignore
-    │   ├── 🔶 .oxlintrc.json
-    │   ├── 🌐 index.html
-    │   ├── 🔒 package-lock.json
-    │   ├── 📦 package.json
-    │   ├── 🔶 tsconfig.app.json
-    │   ├── 🔶 tsconfig.json
-    │   ├── 🔶 tsconfig.node.json
-    │   └── 🔷 vite.config.ts
-    ├── 📁 Module 28-State-Management-in-React-Events-and-Data-Fetching/
-    │   ├── 📁 public/
-    │   │   ├── 🎨 favicon.svg
-    │   │   └── 🎨 icons.svg
-    │   ├── 📁 src/
-    │   │   ├── 📁 assets/
-    │   │   │   ├── 🖼️ hero.png
-    │   │   │   ├── 🎨 react.svg
-    │   │   │   └── 🎨 vite.svg
-    │   │   ├── 🎨 App.css
-    │   │   ├── ⚛️ App.tsx
-    │   │   ├── ⚛️ Batter.tsx
-    │   │   ├── ⚛️ Cart.tsx
-    │   │   ├── ⚛️ Counter.tsx
-    │   │   ├── 🎨 index.css
-    │   │   ├── ⚛️ main.tsx
-    │   │   ├── ⚛️ Post.tsx
-    │   │   ├── ⚛️ Todos.tsx
-    │   │   ├── 🎨 UserCard.css
-    │   │   ├── ⚛️ Users.tsx
-    │   │   └── ⚛️ UsersCard.tsx
-    │   ├── 🙈 .gitignore
-    │   ├── 🔶 .oxlintrc.json
-    │   ├── 🌐 index.html
-    │   ├── 🔒 package-lock.json
-    │   ├── 📦 package.json
-    │   ├── 🔶 tsconfig.app.json
-    │   ├── 🔶 tsconfig.json
-    │   ├── 🔶 tsconfig.node.json
-    │   └── 🔷 vite.config.ts
-    ├── 📁 Module 29-React-Project-Countries-Explorer/
-    │   ├── 📁 public/
-    │   │   ├── 🎨 favicon.svg
-    │   │   └── 🎨 icons.svg
-    │   ├── 📁 src/
-    │   │   ├── 📁 assets/
-    │   │   │   ├── 🖼️ hero.png
-    │   │   │   ├── 🎨 react.svg
-    │   │   │   └── 🎨 vite.svg
-    │   │   ├── 📁 components/
-    │   │   │   ├── 📁 Countries/
-    │   │   │   │   ├── 🎨 Countries.css
-    │   │   │   │   └── ⚛️ Countries.tsx
-    │   │   │   └── 📁 Country/
-    │   │   │       ├── 🎨 Country.css
-    │   │   │       └── ⚛️ Country.tsx
-    │   │   ├── 🎨 App.css
-    │   │   ├── ⚛️ App.tsx
-    │   │   ├── 🎨 index.css
-    │   │   ├── ⚛️ main.tsx
-    │   │   ├── 🔷 Type.ts
-    │   │   └── ⚛️ User.tsx
-    │   ├── 🙈 .gitignore
-    │   ├── 🔶 .oxlintrc.json
-    │   ├── 🌐 index.html
-    │   ├── 🔒 package-lock.json
-    │   ├── 📦 package.json
-    │   ├── 🔶 tsconfig.app.json
-    │   ├── 🔶 tsconfig.json
-    │   ├── 🔶 tsconfig.node.json
-    │   └── 🔷 vite.config.ts
-    ├── 📁 Module 30-JavaScript-DOM-and-BOM-Deep-Dive/
-    │   ├── 🌐 index.html
-    │   ├── ⚡ script.js
-    │   └── ⚡ timer.js
-    ├── 📁 Module 31 - Simple React SPA with BPL-DREAM/
-    │   ├── 📁 public/
-    │   │   ├── 🔶 data.json
-    │   │   ├── 🎨 favicon.svg
-    │   │   └── 🎨 icons.svg
-    │   ├── 📁 src/
-    │   │   ├── 📁 assets/
-    │   │   │   ├── 🖼️ banner-main.png
-    │   │   │   ├── 🖼️ bg-shadow.png
-    │   │   │   ├── 🖼️ hero.png
-    │   │   │   ├── 🖼️ logo-footer.png
-    │   │   │   ├── 🖼️ logo.png
-    │   │   │   ├── 🎨 react.svg
-    │   │   │   └── 🎨 vite.svg
-    │   │   ├── 📁 bpl-dream-11-resources/
-    │   │   │   ├── 📁 application-design/
-    │   │   │   │   ├── 🖼️ main-2.jpg
-    │   │   │   │   └── 🖼️ main.jpg
-    │   │   │   ├── 📁 assets/
-    │   │   │   │   ├── 🖼️ banner-main.png
-    │   │   │   │   ├── 🖼️ bg-shadow.png
-    │   │   │   │   ├── 🖼️ logo-footer.png
-    │   │   │   │   └── 🖼️ logo.png
-    │   │   │   └── 📄 bpl-dream-11-.fig
-    │   │   ├── 📁 components/
-    │   │   │   ├── 📁 players/
-    │   │   │   │   ├── ⚛️ AvailablePlayers.tsx
-    │   │   │   │   ├── ⚛️ PlayerCard.tsx
-    │   │   │   │   ├── ⚛️ Players.tsx
-    │   │   │   │   └── ⚛️ SelectedPlayers.tsx
-    │   │   │   ├── ⚛️ Banner.tsx
-    │   │   │   ├── ⚛️ Nav.tsx
-    │   │   │   └── ⚛️ SelectedPlayerCard.tsx
-    │   │   ├── 📁 type/
-    │   │   │   └── ⚛️ playerType.tsx
-    │   │   ├── ⚛️ App.tsx
-    │   │   ├── 🎨 index.css
-    │   │   └── ⚛️ main.tsx
-    │   ├── 🙈 .gitignore
-    │   ├── ⚡ eslint.config.js
-    │   ├── 🌐 index.html
-    │   ├── 🔒 package-lock.json
-    │   ├── 📦 package.json
-    │   ├── 🔶 tsconfig.app.json
-    │   ├── 🔶 tsconfig.json
-    │   ├── 🔶 tsconfig.node.json
-    │   └── 🔷 vite.config.ts
-    └── 📁 Module 32 - Assignment-5/
+├── 📁 Milestone 5 - Building Interactive UIs With React/
+│   ├── 📁 Conceptual Session 8 - React Basic Concepts/
+│   │   ├── 📁 public/
+│   │   │   ├── 🎨 favicon.svg
+│   │   │   └── 🎨 icons.svg
+│   │   ├── 📁 src/
+│   │   │   ├── 📁 assets/
+│   │   │   │   ├── 🖼️ hero.png
+│   │   │   │   ├── 🎨 react.svg
+│   │   │   │   └── 🎨 vite.svg
+│   │   │   ├── 📁 components/
+│   │   │   │   ├── 📁 bestSelling/
+│   │   │   │   │   ├── 🎨 BestSelling.css
+│   │   │   │   │   └── ⚛️ BestSelling.tsx
+│   │   │   │   ├── 📁 product/
+│   │   │   │   │   ├── 🎨 Product.css
+│   │   │   │   │   └── ⚛️ Product.tsx
+│   │   │   │   └── 📁 products/
+│   │   │   │       ├── 🎨 Products.css
+│   │   │   │       └── ⚛️ Products.tsx
+│   │   │   ├── 🎨 App.css
+│   │   │   ├── ⚛️ App.tsx
+│   │   │   ├── 🎨 index.css
+│   │   │   ├── ⚛️ main.tsx
+│   │   │   └── 🔷 type.ts
+│   │   ├── 🙈 .gitignore
+│   │   ├── 🔶 .oxlintrc.json
+│   │   ├── 🌐 index.html
+│   │   ├── 🔒 package-lock.json
+│   │   ├── 📦 package.json
+│   │   ├── 📚 README.md
+│   │   ├── 🔶 tsconfig.app.json
+│   │   ├── 🔶 tsconfig.json
+│   │   ├── 🔶 tsconfig.node.json
+│   │   └── 🔷 vite.config.ts
+│   ├── 📁 Conceptual Session 9 - React Recap with Project/
+│   │   ├── 📁 public/
+│   │   │   ├── 📁 assets/
+│   │   │   │   ├── 🖼️ dawat-logo.png
+│   │   │   │   ├── 🖼️ delivery.png
+│   │   │   │   ├── 🖼️ footer-logo.png
+│   │   │   │   ├── 🖼️ gate-logo.png
+│   │   │   │   ├── 🖼️ grocery-basket.png
+│   │   │   │   ├── 🖼️ Group 9181.png
+│   │   │   │   ├── 🖼️ Hero Section 1.png
+│   │   │   │   ├── 🖼️ Hero Section-large.png
+│   │   │   │   ├── 🖼️ Mask group.png
+│   │   │   │   ├── 🖼️ nav-logo.png
+│   │   │   │   ├── 🖼️ offers-1.png
+│   │   │   │   ├── 🖼️ offers-2.png
+│   │   │   │   ├── 🖼️ onion.png
+│   │   │   │   ├── 🖼️ popular.png
+│   │   │   │   ├── 🖼️ potato.png
+│   │   │   │   ├── 🖼️ products.png
+│   │   │   │   ├── 🖼️ service.png
+│   │   │   │   └── 🖼️ tomato.png
+│   │   │   ├── 🎨 favicon.svg
+│   │   │   ├── 🎨 icons.svg
+│   │   │   ├── 🖼️ nav-logo.png
+│   │   │   └── 🔶 popularProducts.json
+│   │   ├── 📁 src/
+│   │   │   ├── 📁 assets/
+│   │   │   │   ├── 🖼️ dawat-logo.png
+│   │   │   │   ├── 🖼️ delivery.png
+│   │   │   │   ├── 🖼️ footer-logo.png
+│   │   │   │   ├── 🖼️ gate-logo.png
+│   │   │   │   ├── 🖼️ grocery-basket.png
+│   │   │   │   ├── 🖼️ Group 9181.png
+│   │   │   │   ├── 🖼️ Hero Section 1.png
+│   │   │   │   ├── 🖼️ Hero Section-large.png
+│   │   │   │   ├── 🖼️ hero.png
+│   │   │   │   ├── 🖼️ Mask group.png
+│   │   │   │   ├── 🖼️ nav-logo.png
+│   │   │   │   ├── 🖼️ offers-1.png
+│   │   │   │   ├── 🖼️ offers-2.png
+│   │   │   │   ├── 🖼️ onion.png
+│   │   │   │   ├── 🖼️ popular.png
+│   │   │   │   ├── 🖼️ potato.png
+│   │   │   │   ├── 🖼️ products.png
+│   │   │   │   ├── 🎨 react.svg
+│   │   │   │   ├── 🖼️ service.png
+│   │   │   │   ├── 🖼️ tomato.png
+│   │   │   │   └── 🎨 vite.svg
+│   │   │   ├── 📁 components/
+│   │   │   │   ├── ⚛️ Banner.tsx
+│   │   │   │   ├── ⚛️ Cart.tsx
+│   │   │   │   ├── ⚛️ Navbar.tsx
+│   │   │   │   ├── ⚛️ PopularProductCard.tsx
+│   │   │   │   ├── ⚛️ PopularProducts.tsx
+│   │   │   │   └── ⚛️ Services.tsx
+│   │   │   ├── 📁 types/
+│   │   │   │   └── 🔷 product.ts
+│   │   │   ├── ⚛️ App.tsx
+│   │   │   ├── 🎨 index.css
+│   │   │   └── ⚛️ main.tsx
+│   │   ├── 🙈 .gitignore
+│   │   ├── ⚡ eslint.config.js
+│   │   ├── 🌐 index.html
+│   │   ├── 🔒 package-lock.json
+│   │   ├── 📦 package.json
+│   │   ├── 📚 README.md
+│   │   ├── 🔶 tsconfig.app.json
+│   │   ├── 🔶 tsconfig.json
+│   │   ├── 🔶 tsconfig.node.json
+│   │   └── 🔷 vite.config.ts
+│   ├── 📁 Module 26-Web-Design-Intro-to-Tailwind-and-Responsiveness/
+│   │   ├── 📁 assets/
+│   │   │   ├── 🖼️ dawat-logo.png
+│   │   │   ├── 🖼️ delivery.png
+│   │   │   ├── 🖼️ footer-logo.png
+│   │   │   ├── 🖼️ gate-logo.png
+│   │   │   ├── 🖼️ grocery-basket.png
+│   │   │   ├── 🖼️ Group 9181.png
+│   │   │   ├── 🖼️ Hero Section 1.png
+│   │   │   ├── 🖼️ Hero Section-large.png
+│   │   │   ├── 🖼️ Mask group.png
+│   │   │   ├── 🖼️ nav-logo.png
+│   │   │   ├── 🖼️ offers-1.png
+│   │   │   ├── 🖼️ offers-2.png
+│   │   │   ├── 🖼️ onion.png
+│   │   │   ├── 🖼️ popular.png
+│   │   │   ├── 🖼️ potato.png
+│   │   │   ├── 🖼️ products.png
+│   │   │   ├── 🖼️ service.png
+│   │   │   └── 🖼️ tomato.png
+│   │   ├── 📁 Nature-s-platter-b14-m25/
+│   │   │   ├── 🌐 index.html
+│   │   │   └── 📄 Nature's Platter.fig
+│   │   ├── 📁 TailwindPractice/
+│   │   │   ├── 🌐 index.html
+│   │   │   ├── 🎨 style.css
+│   │   │   └── 🎨 tailwind.init.css
+│   │   ├── 🌐 index.html
+│   │   └── 🎨 tailwind.init.css
+│   ├── 📁 Module 27-React-Code-Components-JSX-Props-and-Rendering/
+│   │   ├── 📁 public/
+│   │   │   ├── 🎨 favicon.svg
+│   │   │   └── 🎨 icons.svg
+│   │   ├── 📁 src/
+│   │   │   ├── 📁 assets/
+│   │   │   │   ├── 🖼️ hero.png
+│   │   │   │   ├── 🎨 react.svg
+│   │   │   │   └── 🎨 vite.svg
+│   │   │   ├── 🎨 App.css
+│   │   │   ├── ⚛️ App.tsx
+│   │   │   ├── ⚛️ Book.tsx
+│   │   │   ├── 🎨 index.css
+│   │   │   ├── ⚛️ main.tsx
+│   │   │   ├── ⚛️ Task.tsx
+│   │   │   ├── ⚛️ Todo.tsx
+│   │   │   ├── ⚛️ UserCard.tsx
+│   │   │   └── ⚛️ Users.tsx
+│   │   ├── 🙈 .gitignore
+│   │   ├── 🔶 .oxlintrc.json
+│   │   ├── 🌐 index.html
+│   │   ├── 🔒 package-lock.json
+│   │   ├── 📦 package.json
+│   │   ├── 📚 README.md
+│   │   ├── 🔶 tsconfig.app.json
+│   │   ├── 🔶 tsconfig.json
+│   │   ├── 🔶 tsconfig.node.json
+│   │   └── 🔷 vite.config.ts
+│   ├── 📁 Module 28-State-Management-in-React-Events-and-Data-Fetching/
+│   │   ├── 📁 public/
+│   │   │   ├── 🎨 favicon.svg
+│   │   │   └── 🎨 icons.svg
+│   │   ├── 📁 src/
+│   │   │   ├── 📁 assets/
+│   │   │   │   ├── 🖼️ hero.png
+│   │   │   │   ├── 🎨 react.svg
+│   │   │   │   └── 🎨 vite.svg
+│   │   │   ├── 🎨 App.css
+│   │   │   ├── ⚛️ App.tsx
+│   │   │   ├── ⚛️ Batter.tsx
+│   │   │   ├── ⚛️ Cart.tsx
+│   │   │   ├── ⚛️ Counter.tsx
+│   │   │   ├── 🎨 index.css
+│   │   │   ├── ⚛️ main.tsx
+│   │   │   ├── ⚛️ Post.tsx
+│   │   │   ├── ⚛️ Todos.tsx
+│   │   │   ├── 🎨 UserCard.css
+│   │   │   ├── ⚛️ Users.tsx
+│   │   │   └── ⚛️ UsersCard.tsx
+│   │   ├── 🙈 .gitignore
+│   │   ├── 🔶 .oxlintrc.json
+│   │   ├── 🌐 index.html
+│   │   ├── 🔒 package-lock.json
+│   │   ├── 📦 package.json
+│   │   ├── 📚 README.md
+│   │   ├── 🔶 tsconfig.app.json
+│   │   ├── 🔶 tsconfig.json
+│   │   ├── 🔶 tsconfig.node.json
+│   │   └── 🔷 vite.config.ts
+│   ├── 📁 Module 29-React-Project-Countries-Explorer/
+│   │   ├── 📁 public/
+│   │   │   ├── 🎨 favicon.svg
+│   │   │   └── 🎨 icons.svg
+│   │   ├── 📁 src/
+│   │   │   ├── 📁 assets/
+│   │   │   │   ├── 🖼️ hero.png
+│   │   │   │   ├── 🎨 react.svg
+│   │   │   │   └── 🎨 vite.svg
+│   │   │   ├── 📁 components/
+│   │   │   │   ├── 📁 Countries/
+│   │   │   │   │   ├── 🎨 Countries.css
+│   │   │   │   │   └── ⚛️ Countries.tsx
+│   │   │   │   └── 📁 Country/
+│   │   │   │       ├── 🎨 Country.css
+│   │   │   │       └── ⚛️ Country.tsx
+│   │   │   ├── 🎨 App.css
+│   │   │   ├── ⚛️ App.tsx
+│   │   │   ├── 🎨 index.css
+│   │   │   ├── ⚛️ main.tsx
+│   │   │   ├── 🔷 Type.ts
+│   │   │   └── ⚛️ User.tsx
+│   │   ├── 🙈 .gitignore
+│   │   ├── 🔶 .oxlintrc.json
+│   │   ├── 🌐 index.html
+│   │   ├── 🔒 package-lock.json
+│   │   ├── 📦 package.json
+│   │   ├── 📚 README.md
+│   │   ├── 🔶 tsconfig.app.json
+│   │   ├── 🔶 tsconfig.json
+│   │   ├── 🔶 tsconfig.node.json
+│   │   └── 🔷 vite.config.ts
+│   ├── 📁 Module 30-JavaScript-DOM-and-BOM-Deep-Dive/
+│   │   ├── 🌐 index.html
+│   │   ├── ⚡ script.js
+│   │   └── ⚡ timer.js
+│   ├── 📁 Module 31 - Simple React SPA with BPL-DREAM/
+│   │   ├── 📁 public/
+│   │   │   ├── 🔶 data.json
+│   │   │   ├── 🎨 favicon.svg
+│   │   │   └── 🎨 icons.svg
+│   │   ├── 📁 src/
+│   │   │   ├── 📁 assets/
+│   │   │   │   ├── 🖼️ banner-main.png
+│   │   │   │   ├── 🖼️ bg-shadow.png
+│   │   │   │   ├── 🖼️ hero.png
+│   │   │   │   ├── 🖼️ logo-footer.png
+│   │   │   │   ├── 🖼️ logo.png
+│   │   │   │   ├── 🎨 react.svg
+│   │   │   │   └── 🎨 vite.svg
+│   │   │   ├── 📁 bpl-dream-11-resources/
+│   │   │   │   ├── 📁 application-design/
+│   │   │   │   │   ├── 🖼️ main-2.jpg
+│   │   │   │   │   └── 🖼️ main.jpg
+│   │   │   │   ├── 📁 assets/
+│   │   │   │   │   ├── 🖼️ banner-main.png
+│   │   │   │   │   ├── 🖼️ bg-shadow.png
+│   │   │   │   │   ├── 🖼️ logo-footer.png
+│   │   │   │   │   └── 🖼️ logo.png
+│   │   │   │   └── 📄 bpl-dream-11-.fig
+│   │   │   ├── 📁 components/
+│   │   │   │   ├── 📁 players/
+│   │   │   │   │   ├── ⚛️ AvailablePlayers.tsx
+│   │   │   │   │   ├── ⚛️ PlayerCard.tsx
+│   │   │   │   │   ├── ⚛️ Players.tsx
+│   │   │   │   │   └── ⚛️ SelectedPlayers.tsx
+│   │   │   │   ├── ⚛️ Banner.tsx
+│   │   │   │   ├── ⚛️ Nav.tsx
+│   │   │   │   └── ⚛️ SelectedPlayerCard.tsx
+│   │   │   ├── 📁 type/
+│   │   │   │   └── ⚛️ playerType.tsx
+│   │   │   ├── ⚛️ App.tsx
+│   │   │   ├── 🎨 index.css
+│   │   │   └── ⚛️ main.tsx
+│   │   ├── 🙈 .gitignore
+│   │   ├── ⚡ eslint.config.js
+│   │   ├── 🌐 index.html
+│   │   ├── 🔒 package-lock.json
+│   │   ├── 📦 package.json
+│   │   ├── 📚 README.md
+│   │   ├── 🔶 tsconfig.app.json
+│   │   ├── 🔶 tsconfig.json
+│   │   ├── 🔶 tsconfig.node.json
+│   │   └── 🔷 vite.config.ts
+│   └── 📁 Module 32 - Assignment-5/
+│       ├── 📁 public/
+│       │   ├── 🎨 favicon.svg
+│       │   ├── 🎨 icons.svg
+│       │   └── 🔶 technologies.json
+│       ├── 📁 src/
+│       │   ├── 📁 assets/
+│       │   │   ├── 🖼️ banner-stack.png
+│       │   │   ├── 🖼️ hamburger.png
+│       │   │   ├── 🖼️ hero.png
+│       │   │   ├── 🖼️ logo-text.png
+│       │   │   ├── 🎨 react.svg
+│       │   │   └── 🎨 vite.svg
+│       │   ├── 📁 components/
+│       │   │   ├── ⚛️ Footer.tsx
+│       │   │   ├── ⚛️ Hero.tsx
+│       │   │   ├── ⚛️ Navbar.tsx
+│       │   │   └── ⚛️ Technologies.tsx
+│       │   ├── 📁 types/
+│       │   │   └── 🔷 technology.ts
+│       │   ├── 🎨 App.css
+│       │   ├── ⚛️ App.tsx
+│       │   ├── 🎨 index.css
+│       │   └── ⚛️ main.tsx
+│       ├── 🙈 .gitignore
+│       ├── ⚡ eslint.config.js
+│       ├── 🌐 index.html
+│       ├── 🔒 package-lock.json
+│       ├── 📦 package.json
+│       ├── 📚 README.md
+│       ├── 🔶 tsconfig.app.json
+│       ├── 🔶 tsconfig.json
+│       ├── 🔶 tsconfig.node.json
+│       └── 🔷 vite.config.ts
+└── 📁 Milestone 6 - Next.js - Pages, Routing and Beyond/
+    └── 📁 module-33-next.js-foundation-and-routing/
         ├── 📁 public/
-        │   ├── 🎨 favicon.svg
-        │   ├── 🎨 icons.svg
-        │   └── 🔶 technologies.json
+        │   ├── 📁 images/
+        │   │   ├── 🖼️ samiur.png
+        │   │   └── 🖼️ tanim4.jpg
+        │   ├── 🎨 file.svg
+        │   ├── 🎨 globe.svg
+        │   ├── 🎨 next.svg
+        │   ├── 🖼️ photo.png
+        │   ├── 🎨 vercel.svg
+        │   └── 🎨 window.svg
         ├── 📁 src/
-        │   ├── 📁 assets/
-        │   │   ├── 🖼️ banner-stack.png
-        │   │   ├── 🖼️ hamburger.png
-        │   │   ├── 🖼️ hero.png
-        │   │   ├── 🖼️ logo-text.png
-        │   │   ├── 🎨 react.svg
-        │   │   └── 🎨 vite.svg
-        │   ├── 📁 components/
-        │   │   ├── ⚛️ Footer.tsx
-        │   │   ├── ⚛️ Hero.tsx
-        │   │   ├── ⚛️ Navbar.tsx
-        │   │   └── ⚛️ Technologies.tsx
-        │   ├── 📁 types/
-        │   │   └── 🔷 technology.ts
-        │   ├── 🎨 App.css
-        │   ├── ⚛️ App.tsx
-        │   ├── 🎨 index.css
-        │   └── ⚛️ main.tsx
+        │   └── 📁 app/
+        │       ├── 📁 about/
+        │       │   ├── 📁 designer/
+        │       │   │   └── ⚛️ page.jsx
+        │       │   ├── 📁 developers/
+        │       │   │   └── ⚛️ page.jsx
+        │       │   └── ⚛️ page.jsx
+        │       ├── 📁 blogs/
+        │       │   ├── 📁 [postid]/
+        │       │   │   └── ⚛️ page.jsx
+        │       │   ├── ⚛️ layout.jsx
+        │       │   └── ⚛️ page.jsx
+        │       ├── 📁 components/
+        │       │   ├── ⚛️ Navbar.jsx
+        │       │   └── ⚛️ Post.jsx
+        │       ├── 📁 dashboard/
+        │       │   ├── ⚛️ layout.jsx
+        │       │   └── ⚛️ page.jsx
+        │       ├── 📁 docs/
+        │       │   └── ⚛️ page.jsx
+        │       ├── 📁 showcase/
+        │       │   └── ⚛️ page.jsx
+        │       ├── 📁 users/
+        │       │   ├── 📁 [userid]/
+        │       │   │   └── ⚛️ page.jsx
+        │       │   └── ⚛️ page.jsx
+        │       ├── 🖼️ favicon.ico
+        │       ├── 🎨 globals.css
+        │       ├── ⚡ layout.js
+        │       ├── ⚛️ not-found.jsx
+        │       └── ⚡ page.js
         ├── 🙈 .gitignore
-        ├── ⚡ eslint.config.js
-        ├── 🌐 index.html
+        ├── 📖 AGENTS.md
+        ├── 📖 CLAUDE.md
+        ├── ⚡ eslint.config.mjs
+        ├── 🔶 jsconfig.json
+        ├── ⚡ next.config.mjs
         ├── 🔒 package-lock.json
         ├── 📦 package.json
-        ├── 🔶 tsconfig.app.json
-        ├── 🔶 tsconfig.json
-        ├── 🔶 tsconfig.node.json
-        └── 🔷 vite.config.ts
+        ├── ⚡ postcss.config.mjs
+        └── 📚 README.md
 ```
 
 ---
@@ -1371,6 +1436,7 @@ Building a modern "Explore the Technologies" personalized tech-stack builder app
 - **JavaScript (ES6+)**: Data types, Conditionals, Loops, Arrays, Objects, Functions, ES6+ features, Array Methods (`map`, `filter`, `find`, `reduce`), Destructuring, DOM manipulation, Events, BOM, Web Storage (`localStorage`/`sessionStorage`), Timers (`setTimeout`/`setInterval`).
 - **TypeScript**: Type annotations, Interfaces, Type Aliases, Generics, OOP (Classes, Inheritance, Access Modifiers, Polymorphism, Abstraction), Utility Types, Real-world Problem Solving.
 - **React & Vite**: Functional components, JSX, Props passing & destructuring, Conditional rendering, List rendering (`.map`), `useState` state management, Event handling, `useEffect` data fetching (APIs), component styling, Vite dev toolchain.
+- **Next.js**: App Router, Root & Nested Layouts, Static & Dynamic Routing (`[postid]`, `[userid]`), Custom 404 (`not-found`), Server Data Fetching, Next.js Components, Tailwind CSS & DaisyUI Integration.
 
 ---
 
