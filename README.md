@@ -172,6 +172,10 @@ Building a modern "Explore the Technologies" personalized tech-stack builder app
 
 Comprehensive introduction to Next.js App Router architecture and routing fundamentals. Covers root layouts (`layout.js`), global styling (`globals.css`), custom 404 pages (`not-found.jsx`), static routing (`/about`, `/dashboard`, `/showcase`), dynamic route parameters (`/blogs/[postid]`), nested layouts, catch-all routing (`/docs`), server data fetching (`/users`, `/users/[userid]`), navigation with Next.js components (`Navbar`, `Post`), and Tailwind CSS integration.
 
+### 🔹 `Milestone 6 Module 34 - Next.js Rendering Basics`
+
+Explores core Next.js rendering architectures, focusing on Server Components (RSC) versus Client Components (`'use client'`). Covers server-side asynchronous data fetching (`async`/`await` in `page.jsx`), integrating external REST APIs (JSONPlaceholder and Cloudinary-backed food APIs), client-side interactivity and state management (`useState` in `Counter.jsx`), advanced image optimization with `next/image` and remote pattern domain configurations in `next.config.mjs`, and rendering dynamic product/post card feeds with DaisyUI and Tailwind CSS.
+
 ---
 
 ## 📂 Repository Structure
@@ -1370,48 +1374,81 @@ Comprehensive introduction to Next.js App Router architecture and routing fundam
 │       ├── 🔶 tsconfig.node.json
 │       └── 🔷 vite.config.ts
 └── 📁 Milestone 6 - Next.js - Pages, Routing and Beyond/
-    └── 📁 module-33-next.js-foundation-and-routing/
+    ├── 📁 module-33-next.js-foundation-and-routing/
+    │   ├── 📁 public/
+    │   │   ├── 📁 images/
+    │   │   │   ├── 🖼️ samiur.png
+    │   │   │   └── 🖼️ tanim4.jpg
+    │   │   ├── 🎨 file.svg
+    │   │   ├── 🎨 globe.svg
+    │   │   ├── 🎨 next.svg
+    │   │   ├── 🖼️ photo.png
+    │   │   ├── 🎨 vercel.svg
+    │   │   └── 🎨 window.svg
+    │   ├── 📁 src/
+    │   │   └── 📁 app/
+    │   │       ├── 📁 about/
+    │   │       │   ├── 📁 designer/
+    │   │       │   │   └── ⚛️ page.jsx
+    │   │       │   ├── 📁 developers/
+    │   │       │   │   └── ⚛️ page.jsx
+    │   │       │   └── ⚛️ page.jsx
+    │   │       ├── 📁 blogs/
+    │   │       │   ├── 📁 [postid]/
+    │   │       │   │   └── ⚛️ page.jsx
+    │   │       │   ├── ⚛️ layout.jsx
+    │   │       │   └── ⚛️ page.jsx
+    │   │       ├── 📁 components/
+    │   │       │   ├── ⚛️ Navbar.jsx
+    │   │       │   └── ⚛️ Post.jsx
+    │   │       ├── 📁 dashboard/
+    │   │       │   ├── ⚛️ layout.jsx
+    │   │       │   └── ⚛️ page.jsx
+    │   │       ├── 📁 docs/
+    │   │       │   └── ⚛️ page.jsx
+    │   │       ├── 📁 showcase/
+    │   │       │   └── ⚛️ page.jsx
+    │   │       ├── 📁 users/
+    │   │       │   ├── 📁 [userid]/
+    │   │       │   │   └── ⚛️ page.jsx
+    │   │       │   └── ⚛️ page.jsx
+    │   │       ├── 🖼️ favicon.ico
+    │   │       ├── 🎨 globals.css
+    │   │       ├── ⚡ layout.js
+    │   │       ├── ⚛️ not-found.jsx
+    │   │       └── ⚡ page.js
+    │   ├── 🙈 .gitignore
+    │   ├── 📖 AGENTS.md
+    │   ├── 📖 CLAUDE.md
+    │   ├── ⚡ eslint.config.mjs
+    │   ├── 🔶 jsconfig.json
+    │   ├── ⚡ next.config.mjs
+    │   ├── 🔒 package-lock.json
+    │   ├── 📦 package.json
+    │   ├── ⚡ postcss.config.mjs
+    │   └── 📚 README.md
+    └── 📁 module-34-next.js-rendering-basics/
         ├── 📁 public/
-        │   ├── 📁 images/
-        │   │   ├── 🖼️ samiur.png
-        │   │   └── 🖼️ tanim4.jpg
         │   ├── 🎨 file.svg
         │   ├── 🎨 globe.svg
         │   ├── 🎨 next.svg
-        │   ├── 🖼️ photo.png
         │   ├── 🎨 vercel.svg
         │   └── 🎨 window.svg
         ├── 📁 src/
         │   └── 📁 app/
-        │       ├── 📁 about/
-        │       │   ├── 📁 designer/
-        │       │   │   └── ⚛️ page.jsx
-        │       │   ├── 📁 developers/
-        │       │   │   └── ⚛️ page.jsx
-        │       │   └── ⚛️ page.jsx
-        │       ├── 📁 blogs/
-        │       │   ├── 📁 [postid]/
-        │       │   │   └── ⚛️ page.jsx
-        │       │   ├── ⚛️ layout.jsx
-        │       │   └── ⚛️ page.jsx
         │       ├── 📁 components/
-        │       │   ├── ⚛️ Navbar.jsx
+        │       │   ├── ⚛️ Counter.jsx
+        │       │   ├── ⚛️ FoodCart.jsx
         │       │   └── ⚛️ Post.jsx
         │       ├── 📁 dashboard/
-        │       │   ├── ⚛️ layout.jsx
         │       │   └── ⚛️ page.jsx
-        │       ├── 📁 docs/
+        │       ├── 📁 menu/
         │       │   └── ⚛️ page.jsx
-        │       ├── 📁 showcase/
-        │       │   └── ⚛️ page.jsx
-        │       ├── 📁 users/
-        │       │   ├── 📁 [userid]/
-        │       │   │   └── ⚛️ page.jsx
+        │       ├── 📁 post/
         │       │   └── ⚛️ page.jsx
         │       ├── 🖼️ favicon.ico
         │       ├── 🎨 globals.css
         │       ├── ⚡ layout.js
-        │       ├── ⚛️ not-found.jsx
         │       └── ⚡ page.js
         ├── 🙈 .gitignore
         ├── 📖 AGENTS.md
@@ -1436,7 +1473,7 @@ Comprehensive introduction to Next.js App Router architecture and routing fundam
 - **JavaScript (ES6+)**: Data types, Conditionals, Loops, Arrays, Objects, Functions, ES6+ features, Array Methods (`map`, `filter`, `find`, `reduce`), Destructuring, DOM manipulation, Events, BOM, Web Storage (`localStorage`/`sessionStorage`), Timers (`setTimeout`/`setInterval`).
 - **TypeScript**: Type annotations, Interfaces, Type Aliases, Generics, OOP (Classes, Inheritance, Access Modifiers, Polymorphism, Abstraction), Utility Types, Real-world Problem Solving.
 - **React & Vite**: Functional components, JSX, Props passing & destructuring, Conditional rendering, List rendering (`.map`), `useState` state management, Event handling, `useEffect` data fetching (APIs), component styling, Vite dev toolchain.
-- **Next.js**: App Router, Root & Nested Layouts, Static & Dynamic Routing (`[postid]`, `[userid]`), Custom 404 (`not-found`), Server Data Fetching, Next.js Components, Tailwind CSS & DaisyUI Integration.
+- **Next.js**: App Router, Server Components (RSC), Client Components (`'use client'`), Root & Nested Layouts, Static & Dynamic Routing (`[postid]`, `[userid]`), Custom 404 (`not-found`), Server-side Data Fetching (`async`/`await`), Image Optimization (`next/image` with remote patterns), Next.js Components, Tailwind CSS & DaisyUI Integration.
 
 ---
 
