@@ -1,0 +1,102 @@
+[
+    {
+        "PlayerName": "Virat Kohli",
+        "playerImg": "https://www.tigercricket.com.bd/images/2025/06/1834883128483094.jpg",
+        "origin": "India",
+        "playerType": "Batsman",
+        "bowlingStyle": "Right-arm medium",
+        "battingStyle": "Right-hand bat",
+        "price": 500,
+        "rating": 9.5
+    },
+    {
+        "PlayerName": "Rohit Sharma",
+        "playerImg": "https://www.tigercricket.com.bd/images/2025/06/1834883128483094.jpg",
+        "origin": "India",
+        "playerType": "Batsman",
+        "bowlingStyle": "Right-arm off break",
+        "battingStyle": "Right-hand bat",
+        "price": 700,
+        "rating": 9.2
+    },
+    {
+        "PlayerName": "Jasprit Bumrah",
+        "playerImg": "https://www.tigercricket.com.bd/images/2025/06/1834883128483094.jpg",
+        "origin": "India",
+        "playerType": "Bowler",
+        "bowlingStyle": "Right-arm fast",
+        "battingStyle": "Right-hand bat",
+        "price": 500,
+        "rating": 9.8
+    },
+    {
+        "PlayerName": "Ravindra Jadeja",
+        "playerImg": "https://www.tigercricket.com.bd/images/2025/06/1834883128483094.jpg",
+        "origin": "India",
+        "playerType": "All-Rounder",
+        "bowlingStyle": "Left-arm orthodox",
+        "battingStyle": "Left-hand bat",
+        "price": 600,
+        "rating": 9.3
+    },
+    {
+        "PlayerName": "Babar Azam",
+        "playerImg": "https://www.tigercricket.com.bd/images/2025/06/1834883128483094.jpg",
+        "origin": "Pakistan",
+        "playerType": "Batsman",
+        "bowlingStyle": "Right-arm off break",
+        "battingStyle": "Right-hand bat",
+        "price": 500,
+        "rating": 9.1
+    },
+    {
+        "PlayerName": "Shaheen Afridi",
+        "playerImg": "https://www.tigercricket.com.bd/images/2025/06/1834883128483094.jpg",
+        "origin": "Pakistan",
+        "playerType": "Bowler",
+        "bowlingStyle": "Left-arm fast",
+        "battingStyle": "Left-hand bat",
+        "price": 700,
+        "rating": 9.0
+    },
+    {
+        "PlayerName": "Shakib Al Hasan",
+        "playerImg": "https://www.tigercricket.com.bd/images/2025/06/1834883128483094.jpg",
+        "origin": "Bangladesh",
+        "playerType": "All-Rounder",
+        "bowlingStyle": "Left-arm orthodox",
+        "battingStyle": "Left-hand bat",
+        "price": 500,
+        "rating": 8.9
+    },
+    {
+        "PlayerName": "Jos Buttler",
+        "playerImg": "https://www.tigercricket.com.bd/images/2025/06/1834883128483094.jpg",
+        "origin": "England",
+        "playerType": "Wicketkeeper-Batsman",
+        "bowlingStyle": "Right-arm medium",
+        "battingStyle": "Right-hand bat",
+        "price": 650,
+        "rating": 9.0
+    },
+    {
+        "PlayerName": "Glenn Maxwell",
+        "playerImg": "https://www.tigercricket.com.bd/images/2025/06/1834883128483094.jpg",
+        "origin": "Australia",
+        "playerType": "All-Rounder",
+        "bowlingStyle": "Right-arm off break",
+        "battingStyle": "Right-hand bat",
+        "price": 550,
+        "rating": 8.8
+    },
+    {
+        "PlayerName": "Kane Williamson",
+        "playerImg": "https://www.tigercricket.com.bd/images/2025/06/1834883128483094.jpg",
+        "origin": "New Zealand",
+        "playerType": "Batsman",
+        "bowlingStyle": "Right-arm off break",
+        "battingStyle": "Right-hand bat",
+        "price": 500,
+        "rating": 9.1
+    }
+]

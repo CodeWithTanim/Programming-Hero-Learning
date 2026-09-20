@@ -112,10 +112,23 @@ Covers React state management and side effects, including `useState` hook for re
 ### 🔹 `Milestone 5 Module 29 - React-Project-Countries-Explorer`
 Building a full-fledged World Countries Explorer web application using React, Vite, and TypeScript. Covers REST Countries API integration, managing complex application state (`visitedCountries`, `visitedFlags`), child-to-parent callback prop handling, custom TypeScript type interfaces (`CountryType`, `Flags`, `Name`), grid layouts, visited country markers, and interactive flag lists.
 
+### 🔹 `Milestone 5 Conceptual Session 8 - React Basic Concepts`
+Conceptual deep dive session on core React concepts using Vite and TypeScript, focusing on component hierarchy, prop passing, rendering product catalogs (`Products`, `BestSelling`, `ProductCard`), managing state, TypeScript type definitions (`type.ts`), and clean code architecture.
+
+### 🔹 `Milestone 5 Module 30 - JavaScript-DOM-and-BOM-Deep-Dive`
+Comprehensive deep dive into JavaScript Document Object Model (DOM) and Browser Object Model (BOM). Covers DOM selectors (`getElementById`, `getElementsByTagName`, `getElementsByClassName`, `querySelector`, `querySelectorAll`), modifying element text and HTML content (`textContent`, `innerText`, `innerHTML`), manipulating attributes (`getAttribute`, `setAttribute`, `removeAttribute`, `hasAttribute`), class list management (`classList.add`, `remove`, `toggle`), interactive DOM event listeners (click, keypress, input handling), Browser Object Model (BOM) APIs (`window`, `location.reload`), asynchronous timers (`setTimeout`, `setInterval`, `clearTimeout`, `clearInterval`), and browser storage persistence (`localStorage` and `sessionStorage`).
+
+### 🔹 `Milestone 5 Conceptual Session 9 - React Recap with Project`
+Comprehensive recap session building a full-featured e-commerce product showcase project using React, TypeScript, and Vite. Covers reusable UI component architecture (`Navbar`, `Banner`, `Services`, `Cart`, `PopularProducts`, `PopularProductCard`), asynchronous data fetching (`fetch`), React `Suspense` for asynchronous component rendering with fallback loaders, shopping cart state management (`useState`) with add-to-cart, remove, and toggle logic, TypeScript type definitions (`IPopularProduct`), and responsive UI layout.
+
+### 🔹 `Milestone 5 Module 31 - Simple React SPA with BPL-DREAM`
+Building a full-featured fantasy cricket player selection Single Page Application (SPA) using React, TypeScript, Vite, Tailwind CSS, and DaisyUI. Demonstrates asynchronous resource handling with React `Suspense` and the React 19 `use()` hook for reading Promises, dynamic tab navigation between Available and Selected squads, coin budget management, player selection validation (budget limits, duplicate checks, squad caps), player card removal and coin refunds, notification feedback with `react-toastify`, and structured TypeScript interfaces (`Iplayer`).
+
 ### 🔹 `Durbar - Task`
 Contains problem-solving challenges and contest submissions, including:
 - **Durbar Contest #1**: Month resolution (`getMonthName.js`), object property counting (`countNumberProperties.js`), math operation validations (`checkMathOperationsForNine.js`), HTML body content extraction (`extractBodyContent.ts`), monetary calculations (`calculateRemainingMoney.js`).
 - **Durbar Contest #2**: String camelCase conversion (`convertToCamelCase.js`), array even/odd counting (`countEvenOdd.js`), first unique character finder (`findFirstUniqueChar.js`), longest word identifier (`findLongestWord.js`), second largest unique element finder (`findSecondLargestUnique.js`).
+- **Durbar Contest #3**: String reversal per word (`reverseEachWord.js`), temperature conversion (`convertTemperature.js`), palindrome verification (`isPalindrome.js`), password strength classification (`classifyPassword.js`), repeated digit summation (`repeatedDigitSum.js`).
 
 ---
 
@@ -123,19 +136,6 @@ Contains problem-solving challenges and contest submissions, including:
 
 ```
 📦 AI-Driven Full Stack Web Engineering/
-├── 📁 Durbar - Task/
-│   ├── 📁 Durbar Contest #1/
-│   │   ├── ⚡ 1.getMonthName.js
-│   │   ├── ⚡ 2.countNumberProperties.js
-│   │   ├── ⚡ 3.checkMathOperationsForNine.js
-│   │   ├── 🔷 4.extractBodyContent.ts
-│   │   └── ⚡ 5.calculateRemainingMoney.js
-│   └── 📁 Durbar Contest #2/
-│       ├── ⚡ 1.convertToCamelCase.js
-│       ├── ⚡ 2.countEvenOdd.js
-│       ├── ⚡ 3.findFirstUniqueChar.js
-│       ├── ⚡ 4.findLongestWord.js
-│       └── ⚡ 5.findSecondLargestUnique.js
 ├── 📁 Milestone 1 - Launch Your Web Journey - HTML, CSS, and GitHUb Fundamentals/
 │   ├── 📁 Conceptual Session 1 - Learn and Explore HTML, CSS (Project)/
 │   │   ├── 📁 conceptual-session/
@@ -1017,6 +1017,108 @@ Contains problem-solving challenges and contest submissions, including:
 │       │   └── 🔷 ternary.ts
 │       └── 🔶 tsconfig.json
 └── 📁 Milestone 5 - Building Interactive UIs With React/
+    ├── 📁 Conceptual Session 8 - React Basic Concepts/
+    │   ├── 📁 public/
+    │   │   ├── 🎨 favicon.svg
+    │   │   └── 🎨 icons.svg
+    │   ├── 📁 src/
+    │   │   ├── 📁 assets/
+    │   │   │   ├── 🖼️ hero.png
+    │   │   │   ├── 🎨 react.svg
+    │   │   │   └── 🎨 vite.svg
+    │   │   ├── 📁 components/
+    │   │   │   ├── 📁 bestSelling/
+    │   │   │   │   ├── 🎨 BestSelling.css
+    │   │   │   │   └── ⚛️ BestSelling.tsx
+    │   │   │   ├── 📁 product/
+    │   │   │   │   ├── 🎨 Product.css
+    │   │   │   │   └── ⚛️ Product.tsx
+    │   │   │   └── 📁 products/
+    │   │   │       ├── 🎨 Products.css
+    │   │   │       └── ⚛️ Products.tsx
+    │   │   ├── 🎨 App.css
+    │   │   ├── ⚛️ App.tsx
+    │   │   ├── 🎨 index.css
+    │   │   ├── ⚛️ main.tsx
+    │   │   └── 🔷 type.ts
+    │   ├── 🙈 .gitignore
+    │   ├── 🔶 .oxlintrc.json
+    │   ├── 🌐 index.html
+    │   ├── 🔒 package-lock.json
+    │   ├── 📦 package.json
+    │   ├── 🔶 tsconfig.app.json
+    │   ├── 🔶 tsconfig.json
+    │   ├── 🔶 tsconfig.node.json
+    │   └── 🔷 vite.config.ts
+    ├── 📁 Conceptual Session 9 - React Recap with Project/
+    │   ├── 📁 public/
+    │   │   ├── 📁 assets/
+    │   │   │   ├── 🖼️ dawat-logo.png
+    │   │   │   ├── 🖼️ delivery.png
+    │   │   │   ├── 🖼️ footer-logo.png
+    │   │   │   ├── 🖼️ gate-logo.png
+    │   │   │   ├── 🖼️ grocery-basket.png
+    │   │   │   ├── 🖼️ Group 9181.png
+    │   │   │   ├── 🖼️ Hero Section 1.png
+    │   │   │   ├── 🖼️ Hero Section-large.png
+    │   │   │   ├── 🖼️ Mask group.png
+    │   │   │   ├── 🖼️ nav-logo.png
+    │   │   │   ├── 🖼️ offers-1.png
+    │   │   │   ├── 🖼️ offers-2.png
+    │   │   │   ├── 🖼️ onion.png
+    │   │   │   ├── 🖼️ popular.png
+    │   │   │   ├── 🖼️ potato.png
+    │   │   │   ├── 🖼️ products.png
+    │   │   │   ├── 🖼️ service.png
+    │   │   │   └── 🖼️ tomato.png
+    │   │   ├── 🎨 favicon.svg
+    │   │   ├── 🎨 icons.svg
+    │   │   ├── 🖼️ nav-logo.png
+    │   │   └── 🔶 popularProducts.json
+    │   ├── 📁 src/
+    │   │   ├── 📁 assets/
+    │   │   │   ├── 🖼️ dawat-logo.png
+    │   │   │   ├── 🖼️ delivery.png
+    │   │   │   ├── 🖼️ footer-logo.png
+    │   │   │   ├── 🖼️ gate-logo.png
+    │   │   │   ├── 🖼️ grocery-basket.png
+    │   │   │   ├── 🖼️ Group 9181.png
+    │   │   │   ├── 🖼️ Hero Section 1.png
+    │   │   │   ├── 🖼️ Hero Section-large.png
+    │   │   │   ├── 🖼️ hero.png
+    │   │   │   ├── 🖼️ Mask group.png
+    │   │   │   ├── 🖼️ nav-logo.png
+    │   │   │   ├── 🖼️ offers-1.png
+    │   │   │   ├── 🖼️ offers-2.png
+    │   │   │   ├── 🖼️ onion.png
+    │   │   │   ├── 🖼️ popular.png
+    │   │   │   ├── 🖼️ potato.png
+    │   │   │   ├── 🖼️ products.png
+    │   │   │   ├── 🎨 react.svg
+    │   │   │   ├── 🖼️ service.png
+    │   │   │   ├── 🖼️ tomato.png
+    │   │   │   └── 🎨 vite.svg
+    │   │   ├── 📁 components/
+    │   │   │   ├── ⚛️ Banner.tsx
+    │   │   │   ├── ⚛️ Cart.tsx
+    │   │   │   ├── ⚛️ Navbar.tsx
+    │   │   │   ├── ⚛️ PopularProductCard.tsx
+    │   │   │   ├── ⚛️ PopularProducts.tsx
+    │   │   │   └── ⚛️ Services.tsx
+    │   │   ├── 📁 types/
+    │   │   │   └── 🔷 product.ts
+    │   │   ├── ⚛️ App.tsx
+    │   │   ├── 🎨 index.css
+    │   │   └── ⚛️ main.tsx
+    │   ├── 🙈 .gitignore
+    │   ├── ⚡ eslint.config.js
+    │   ├── 🌐 index.html
+    │   ├── 🔒 package-lock.json
+    │   ├── 📦 package.json
+    │   ├── 🔶 tsconfig.app.json
+    │   ├── 🔶 tsconfig.json
+    │   ├── 🔶 tsconfig.node.json
+    │   └── 🔷 vite.config.ts
     ├── 📁 Module 26-Web-Design-Intro-to-Tailwind-and-Responsiveness/
     │   ├── 📁 assets/
     │   │   ├── 🖼️ dawat-logo.png
@@ -1103,30 +1205,81 @@ Contains problem-solving challenges and contest submissions, including:
     │   ├── 🔶 tsconfig.json
     │   ├── 🔶 tsconfig.node.json
     │   └── 🔷 vite.config.ts
-    └── 📁 Module 29-React-Project-Countries-Explorer/
+    ├── 📁 Module 29-React-Project-Countries-Explorer/
+    │   ├── 📁 public/
+    │   │   ├── 🎨 favicon.svg
+    │   │   └── 🎨 icons.svg
+    │   ├── 📁 src/
+    │   │   ├── 📁 assets/
+    │   │   │   ├── 🖼️ hero.png
+    │   │   │   ├── 🎨 react.svg
+    │   │   │   └── 🎨 vite.svg
+    │   │   ├── 📁 components/
+    │   │   │   ├── 📁 Countries/
+    │   │   │   │   ├── 🎨 Countries.css
+    │   │   │   │   └── ⚛️ Countries.tsx
+    │   │   │   └── 📁 Country/
+    │   │   │       ├── 🎨 Country.css
+    │   │   │       └── ⚛️ Country.tsx
+    │   │   ├── 🎨 App.css
+    │   │   ├── ⚛️ App.tsx
+    │   │   ├── 🎨 index.css
+    │   │   ├── ⚛️ main.tsx
+    │   │   ├── 🔷 Type.ts
+    │   │   └── ⚛️ User.tsx
+    │   ├── 🙈 .gitignore
+    │   ├── 🔶 .oxlintrc.json
+    │   ├── 🌐 index.html
+    │   ├── 🔒 package-lock.json
+    │   ├── 📦 package.json
+    │   ├── 🔶 tsconfig.app.json
+    │   ├── 🔶 tsconfig.json
+    │   ├── 🔶 tsconfig.node.json
+    │   └── 🔷 vite.config.ts
+    ├── 📁 Module 30-JavaScript-DOM-and-BOM-Deep-Dive/
+    │   ├── 🌐 index.html
+    │   ├── ⚡ script.js
+    │   └── ⚡ timer.js
+    └── 📁 Module 31 - Simple React SPA with BPL-DREAM/
         ├── 📁 public/
+        │   ├── 🔶 data.json
         │   ├── 🎨 favicon.svg
         │   └── 🎨 icons.svg
         ├── 📁 src/
         │   ├── 📁 assets/
+        │   │   ├── 🖼️ banner-main.png
+        │   │   ├── 🖼️ bg-shadow.png
         │   │   ├── 🖼️ hero.png
+        │   │   ├── 🖼️ logo-footer.png
+        │   │   ├── 🖼️ logo.png
         │   │   ├── 🎨 react.svg
         │   │   └── 🎨 vite.svg
+        │   ├── 📁 bpl-dream-11-resources/
+        │   │   ├── 📁 application-design/
+        │   │   │   ├── 🖼️ main-2.jpg
+        │   │   │   └── 🖼️ main.jpg
+        │   │   ├── 📁 assets/
+        │   │   │   ├── 🖼️ banner-main.png
+        │   │   │   ├── 🖼️ bg-shadow.png
+        │   │   │   ├── 🖼️ logo-footer.png
+        │   │   │   └── 🖼️ logo.png
+        │   │   └── 📄 bpl-dream-11-.fig
         │   ├── 📁 components/
-        │   │   ├── 📁 Countries/
-        │   │   │   ├── 🎨 Countries.css
-        │   │   │   └── ⚛️ Countries.tsx
-        │   │   └── 📁 Country/
-        │   │       ├── 🎨 Country.css
-        │   │       └── ⚛️ Country.tsx
-        │   ├── 🎨 App.css
+        │   │   ├── 📁 players/
+        │   │   │   ├── ⚛️ AvailablePlayers.tsx
+        │   │   │   ├── ⚛️ PlayerCard.tsx
+        │   │   │   ├── ⚛️ Players.tsx
+        │   │   │   └── ⚛️ SelectedPlayers.tsx
+        │   │   ├── ⚛️ Banner.tsx
+        │   │   ├── ⚛️ Nav.tsx
+        │   │   └── ⚛️ SelectedPlayerCard.tsx
+        │   ├── 📁 type/
+        │   │   └── ⚛️ playerType.tsx
         │   ├── ⚛️ App.tsx
         │   ├── 🎨 index.css
-        │   ├── ⚛️ main.tsx
-        │   ├── 🔷 Type.ts
-        │   └── ⚛️ User.tsx
+        │   └── ⚛️ main.tsx
         ├── 🙈 .gitignore
-        ├── 🔶 .oxlintrc.json
+        ├── ⚡ eslint.config.js
         ├── 🌐 index.html
         ├── 🔒 package-lock.json
         ├── 📦 package.json
@@ -1143,7 +1296,7 @@ Contains problem-solving challenges and contest submissions, including:
 - **Git & GitHub**: Version control, repository hosting, basic workflow.
 - **CSS3**: Selectors, Flexbox, Grid, Responsive Web Design, Navigation, Layouts.
 - **Tailwind CSS**: Responsive utility styling, breakpoints (`sm`, `md`, `lg`), Flexbox & Grid layouts, custom component styling.
-- **JavaScript (ES6+)**: Data types, Conditionals, Loops, Arrays, Objects, Functions, ES6+ features, Array Methods (`map`, `filter`, `find`, `reduce`), Destructuring.
+- **JavaScript (ES6+)**: Data types, Conditionals, Loops, Arrays, Objects, Functions, ES6+ features, Array Methods (`map`, `filter`, `find`, `reduce`), Destructuring, DOM manipulation, Events, BOM, Web Storage (`localStorage`/`sessionStorage`), Timers (`setTimeout`/`setInterval`).
 - **TypeScript**: Type annotations, Interfaces, Type Aliases, Generics, OOP (Classes, Inheritance, Access Modifiers, Polymorphism, Abstraction), Utility Types, Real-world Problem Solving.
 - **React & Vite**: Functional components, JSX, Props passing & destructuring, Conditional rendering, List rendering (`.map`), `useState` state management, Event handling, `useEffect` data fetching (APIs), component styling, Vite dev toolchain.
 
