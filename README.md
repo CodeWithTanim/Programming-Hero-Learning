@@ -5,130 +5,168 @@ Welcome to the **AI-Driven Full Stack Web Engineering** module of my learning jo
 ## 📚 Milestones & Modules Overview
 
 ### 🔹 `Milestone 1 Module 1 - HTML Basics`
+
 Focuses on the fundamentals of HTML, structure, semantic tags, forms, tables, media elements, and building a basic restaurant landing page layout.
 
 ### 🔹 `Milestone 1 Module 2 - Git & GitHub`
+
 Covers the basics of Git, initializing repositories, staging changes, committing, and pushing code to GitHub.
 
 ### 🔹 `Milestone 1 Module 3 - Explore CSS Basics`
+
 Covers the basics of CSS, styling, selectors, displays, backgrounds, shadows, and applying basic styles to HTML pages.
 
 ### 🔹 `Milestone 1 Module 4 - CSS Layouts and Advance Styling`
+
 Covers intermediate and advanced CSS layout techniques like Flexbox, Grid, positioning, tables, forms, navigation bar design, and custom page designs.
 
 ### 🔹 `Milestone 1 Module 5 - Build a beautiful Portfolio Website`
+
 Building a complete, professional, and responsive portfolio website using HTML and CSS from scratch.
 
 ### 🔹 `Milestone 1 Module 6 - Assignment-1`
+
 Designing and building a fully responsive conference website layout (DevConf 2026) using HTML and CSS from Figma/Penpot design templates.
 
 ### 🔹 `Milestone 2 Module 7 - Introduction-to-JavaScript`
+
 Covers the core fundamentals of JavaScript, including variables, data types, arithmetic operations, variable naming rules, string operations, and practice tasks.
 
 ### 🔹 `Milestone 2 Module 8 - Fundamental-Concepts-of-Conditionals`
+
 Covers comparison operators, `if-else` condition statements, nested conditionals, ternary operators, logical AND/OR (`&&`/`||`), NOT operator, and practical challenge tasks (grading system, discount calculation, login check, etc.).
 
 ### 🔹 `Milestone 2 Module 9 - Fundamental-Concepts-of-Loops`
+
 Covers the core concepts of loops in JavaScript, including `for` loops, `while` loops, `do-while` loops, loop control statements (break/continue), and looping practice tasks.
 
 ### 🔹 `Milestone 2 Module 10 - Fundamental-Concepts-of-Array`
+
 Covers the core concepts of arrays in JavaScript, including array initialization, indexing, push/pop/shift/unshift methods, array checks (`includes`/`indexOf`/`Array.isArray`), concatenation, slice/splice, and array manipulation practice tasks.
 
 ### 🔹 `Milestone 2 Conceptual Session 2 - Introduction-to-JavaScript-Program-Execution-and-Variable-Declaration`
+
 Covers intermediate JavaScript execution context, code execution phases (creation vs. execution), hoisting, scopes, and variable declarations (`var`, `let`, `const`).
 
 ### 🔹 `Milestone 2 Module 11 - Fundamentals of Strings & Objects`
+
 Covers the core concepts of strings and objects in JavaScript, including string properties/methods (lowercase, uppercase, trim, slice, split, join, concat, includes, reverse), object declaration, accessing properties (dot vs. bracket notation), nested objects, keys/values extraction, looping through object properties, and practice tasks.
 
 ### 🔹 `Milestone 2 Module 12 - Fundamental-of-Functions`
+
 Covers the core concepts of functions in JavaScript, including function declaration, parameters, return statements, return vs. no-return, standard function structures, and function practice tasks.
 
 ### 🔹 `Milestone 2 Conceptual Session 3 - JavaScript-Foundation`
+
 Deep dive session on fundamental JavaScript foundation concepts, variables, conditions, loops, arrays, objects, functions, and solving various practice problems.
 
 ### 🔹 `Milestone 2 Module 13 - Basic-Problem-Solving-With-JavaScript`
+
 Covers JavaScript problem solving, including unit conversions (inch to feet, mile to kilometer), leap year checks, sum/average of odd/even numbers in array, duplicate element removal, usage of standard JavaScript math functions, swapping variables, and array manipulation tasks.
 
 ### 🔹`Milestone 2 Module 14 - Debugging-and-Problem-solving-with-JavaScript`
+
 Covers JavaScript debugging techniques and solving various programming problems, including finding max/min values in arrays, summing numbers in arrays, calculating total price in shopping carts, discount logic, simple calculator implementation, and coding tasks.
 
 ### 🔹 `Milestone 2 Module 15 - Assignment-2`
+
 Solving intermediate JavaScript assignment problems including match winner tracker, elevator weight safety checker, AI token cost calculator, top-rated restaurant finder, and API response time monitoring/debugging challenge.
 
 ### 🔹 `Milestone 2 Conceptual Session 4 - Problem-Solving-with-JavaScript`
+
 Conceptual session focusing on solving real-world JavaScript problem tasks, including validation, advanced math calculations, shopping cart total calculations, and code walkthroughs.
 
 ### 🔹 `Milestone 3 Module 16 - ES6-Fundamentals`
+
 Covers modern ES6+ features in JavaScript including `let`/`const`, template literals, arrow functions, the spread operator (`...`), destructuring (objects & arrays), keys/values extraction, `forEach`, `map`, `filter`, `find`, `reduce`, classes, inheritance, and practice tasks.
 
 ### 🔹 `Milestone 3 Module 17 - More ES6`
+
 Covers advanced ES6+ topics in JavaScript, including `map` vs. `forEach`, filtering arrays, find operations, destructuring nested objects, accessing arrays of objects, optional chaining (`?.`), prototypal inheritance, and ES6 practice tasks.
 
 ### 🔹`Milestone 3 Conceptual Session 5 - JavaScript-ES6-Intro`
+
 Conceptual session introducing advanced JavaScript ES6+ patterns, scope differences, array map/filter/find methods, object destructuring, optional chaining, and problem solving.
 
 ### 🔹 `Milestone 3 Module 18 - Problem-Solving-wtih-JavaScript-and-ES6`
+
 Covers JavaScript and ES6 problem solving, including finding the maximum product of two numbers, filtering books by page count/year, finding specific characters, and advanced coding challenges.
 
 ### 🔹 `Milestone 3 Module 19 - Problem-Solving-wtih-JavaScript-and-ES6 -PART-2`
+
 Covers the second part of ES6 problem solving, including working with arrays of objects, finding property values, filtering products by price, computing total shopping cart costs, calculating employee salaries, and coding challenges.
 
 ### 🔹 `Milestone 3 Conceptual Session 6 - JavaScript-ES6-Problem-Solving`
+
 Conceptual session focusing on advanced JavaScript ES6+ problem solving patterns, filter/map chaining, find operations on arrays of objects, object property summation, and coding walkthroughs.
 
 ### 🔹 `Milestone 3 Module 20 - Assignment-3`
+
 Solving advanced JavaScript and ES6+ assignment problems, including calculating custom discounts, processing complex user data, calculating service metrics, and related coding tasks.
 
 ### 🔹 `Milestone 4 Module 21 - TypeScript-Fundamentals`
+
 Covers the core fundamentals of TypeScript, including installation, setting up `tsconfig.json`, basic type annotations (string, number, boolean, array, tuple, object), functions, type aliases, union/intersection types, interfaces, type assertions, and basic compiler usage.
 
 ### 🔹 `Milestone 4 Module 22 - More-TypeScript`
+
 Covers advanced TypeScript features including type assertions, type narrowing, interface vs. type alias, extending interfaces, generics (types, functions, interfaces, constraints), utility types (Pick, Omit, Partial, Required, Readonly, Record), and practice tasks.
 
 ### 🔹 `Milestone 4 Module 23 - OOP-in-TypeScript`
+
 Covers Object-Oriented Programming (OOP) concepts in TypeScript, including classes, objects, constructors, inheritance, access modifiers (public, private, protected, readonly), getters and setters, polymorphism, abstraction (abstract classes & interfaces), static properties/methods, and practice tasks.
 
 ### 🔹 `Milestone 4 Module 24 - Problem-Solving-with-TypeScript`
+
 Focuses on real-world TypeScript problem solving, applying type safety, union & intersection types, optional chaining, array & object manipulation, generics, and custom type guards across various practical programming challenges (movie ticketing, inventory stock status, user profiles, shopping carts, student results, role permissions, product filtering, healthcare patient records, and financial transaction processing).
 
 ### 🔹 `Milestone 4 Module 25 - Assignment-4`
+
 Solving practical TypeScript assignment problems, including battery level status checker (`getBatteryStatus`), table booking confirmation formatter (`formatBookingConfirmation`), weekly expense tracker (`calculateWeeklyTotal`), traffic light action handler (`getTrafficAction`), quiz score summary calculator (`getQuizSummary`), and combined solution implementations (`final_Answer.ts`).
 
 ### 🔹 `Milestone 4 Conceptual Session 7 - Problem-Solving-with-TypeScript`
+
 Conceptual session focusing on TypeScript problem-solving patterns, including signal status checker (`getSignalStatus`), event ticket confirmation (`formatTicketConfirmation`), weekly step tracker (`calculateWeeklySteps`), order total calculator (`calculateOrderTotal`), weather advice generator (`getWeatherAdvice`), filtering on-duty employees (`findOnDutyEmployees`), and distance summary calculations (`getDistanceSummary`).
 
 ### 🔹 `Milestone 4 - Special Session on JS, TS for React`
+
 Covers essential JavaScript and TypeScript concepts for React development, including template literals, destructuring, spread & rest operators, array methods (`map`, `filter`, `find`, `forEach`, `reduce`), ternary operators, optional chaining & nullish coalescing (`?.`, `??`), Promises & async handling, and TypeScript configurations.
 
 ### 🔹 `Milestone 5 Module 26 - Web-Design-Intro-to-Tailwind-and-Responsiveness`
+
 Focuses on modern web design fundamentals using Tailwind CSS, including CDN integration, responsive breakpoints (`sm`, `md`, `lg`), layout structuring with Flexbox and Grid, custom utility styling, asset handling, and practical projects (`Nature-s-platter-b14-m25`, `TailwindPractice`).
 
 ### 🔹 `Milestone 5 Module 27 - React-Code-Components-JSX-Props-and-Rendering`
+
 Covers core React concepts using Vite & TypeScript, including JSX architecture, creating reusable functional components (`Task`, `Todo`, `UserCard`, `Users`, `Book`), passing & destructuring props, conditional rendering (if/else, ternary operator, logical `&&`), rendering lists with `.map()`, component-level CSS, and Oxlint setup.
 
 ### 🔹 `Milestone 5 Module 28 - State-Management-in-React-Events-and-Data-Fetching`
+
 Covers React state management and side effects, including `useState` hook for reactive state updates (`Counter`, `Batter`, `Cart`), event handling and event parameters, `useEffect` hook for asynchronous data fetching from external APIs (JSONPlaceholder), managing loading states, rendering dynamic card components (`Users`, `UsersCard`, `Post`, `Todos`), and modular CSS styling.
 
 ### 🔹 `Milestone 5 Module 29 - React-Project-Countries-Explorer`
+
 Building a full-fledged World Countries Explorer web application using React, Vite, and TypeScript. Covers REST Countries API integration, managing complex application state (`visitedCountries`, `visitedFlags`), child-to-parent callback prop handling, custom TypeScript type interfaces (`CountryType`, `Flags`, `Name`), grid layouts, visited country markers, and interactive flag lists.
 
 ### 🔹 `Milestone 5 Conceptual Session 8 - React Basic Concepts`
+
 Conceptual deep dive session on core React concepts using Vite and TypeScript, focusing on component hierarchy, prop passing, rendering product catalogs (`Products`, `BestSelling`, `ProductCard`), managing state, TypeScript type definitions (`type.ts`), and clean code architecture.
 
 ### 🔹 `Milestone 5 Module 30 - JavaScript-DOM-and-BOM-Deep-Dive`
+
 Comprehensive deep dive into JavaScript Document Object Model (DOM) and Browser Object Model (BOM). Covers DOM selectors (`getElementById`, `getElementsByTagName`, `getElementsByClassName`, `querySelector`, `querySelectorAll`), modifying element text and HTML content (`textContent`, `innerText`, `innerHTML`), manipulating attributes (`getAttribute`, `setAttribute`, `removeAttribute`, `hasAttribute`), class list management (`classList.add`, `remove`, `toggle`), interactive DOM event listeners (click, keypress, input handling), Browser Object Model (BOM) APIs (`window`, `location.reload`), asynchronous timers (`setTimeout`, `setInterval`, `clearTimeout`, `clearInterval`), and browser storage persistence (`localStorage` and `sessionStorage`).
 
 ### 🔹 `Milestone 5 Conceptual Session 9 - React Recap with Project`
+
 Comprehensive recap session building a full-featured e-commerce product showcase project using React, TypeScript, and Vite. Covers reusable UI component architecture (`Navbar`, `Banner`, `Services`, `Cart`, `PopularProducts`, `PopularProductCard`), asynchronous data fetching (`fetch`), React `Suspense` for asynchronous component rendering with fallback loaders, shopping cart state management (`useState`) with add-to-cart, remove, and toggle logic, TypeScript type definitions (`IPopularProduct`), and responsive UI layout.
 
 ### 🔹 `Milestone 5 Module 31 - Simple React SPA with BPL-DREAM`
+
 Building a full-featured fantasy cricket player selection Single Page Application (SPA) using React, TypeScript, Vite, Tailwind CSS, and DaisyUI. Demonstrates asynchronous resource handling with React `Suspense` and the React 19 `use()` hook for reading Promises, dynamic tab navigation between Available and Selected squads, coin budget management, player selection validation (budget limits, duplicate checks, squad caps), player card removal and coin refunds, notification feedback with `react-toastify`, and structured TypeScript interfaces (`Iplayer`).
 
-### 🔹 `Durbar - Task`
-Contains problem-solving challenges and contest submissions, including:
-- **Durbar Contest #1**: Month resolution (`getMonthName.js`), object property counting (`countNumberProperties.js`), math operation validations (`checkMathOperationsForNine.js`), HTML body content extraction (`extractBodyContent.ts`), monetary calculations (`calculateRemainingMoney.js`).
-- **Durbar Contest #2**: String camelCase conversion (`convertToCamelCase.js`), array even/odd counting (`countEvenOdd.js`), first unique character finder (`findFirstUniqueChar.js`), longest word identifier (`findLongestWord.js`), second largest unique element finder (`findSecondLargestUnique.js`).
-- **Durbar Contest #3**: String reversal per word (`reverseEachWord.js`), temperature conversion (`convertTemperature.js`), palindrome verification (`isPalindrome.js`), password strength classification (`classifyPassword.js`), repeated digit summation (`repeatedDigitSum.js`).
+### 🔹 `Milestone 5 Module 32 - Assignment-5`
+
+Building a modern "Explore the Technologies" personalized tech-stack builder application using React, TypeScript, and Vite. Features asynchronous API data fetching (`fetch('/technologies.json')`), stack management state (`stack`, `setStack`) with add, remove, and clear-all operations, duplicate detection with alert notifications via `react-toastify`, dynamic stack analytics, clean modular component architecture (`Navbar`, `Hero`, `Technologies`, `Footer`), TypeScript type safety (`Technology`), and responsive Tailwind CSS layout.
 
 ---
 
@@ -1240,41 +1278,74 @@ Contains problem-solving challenges and contest submissions, including:
     │   ├── 🌐 index.html
     │   ├── ⚡ script.js
     │   └── ⚡ timer.js
-    └── 📁 Module 31 - Simple React SPA with BPL-DREAM/
+    ├── 📁 Module 31 - Simple React SPA with BPL-DREAM/
+    │   ├── 📁 public/
+    │   │   ├── 🔶 data.json
+    │   │   ├── 🎨 favicon.svg
+    │   │   └── 🎨 icons.svg
+    │   ├── 📁 src/
+    │   │   ├── 📁 assets/
+    │   │   │   ├── 🖼️ banner-main.png
+    │   │   │   ├── 🖼️ bg-shadow.png
+    │   │   │   ├── 🖼️ hero.png
+    │   │   │   ├── 🖼️ logo-footer.png
+    │   │   │   ├── 🖼️ logo.png
+    │   │   │   ├── 🎨 react.svg
+    │   │   │   └── 🎨 vite.svg
+    │   │   ├── 📁 bpl-dream-11-resources/
+    │   │   │   ├── 📁 application-design/
+    │   │   │   │   ├── 🖼️ main-2.jpg
+    │   │   │   │   └── 🖼️ main.jpg
+    │   │   │   ├── 📁 assets/
+    │   │   │   │   ├── 🖼️ banner-main.png
+    │   │   │   │   ├── 🖼️ bg-shadow.png
+    │   │   │   │   ├── 🖼️ logo-footer.png
+    │   │   │   │   └── 🖼️ logo.png
+    │   │   │   └── 📄 bpl-dream-11-.fig
+    │   │   ├── 📁 components/
+    │   │   │   ├── 📁 players/
+    │   │   │   │   ├── ⚛️ AvailablePlayers.tsx
+    │   │   │   │   ├── ⚛️ PlayerCard.tsx
+    │   │   │   │   ├── ⚛️ Players.tsx
+    │   │   │   │   └── ⚛️ SelectedPlayers.tsx
+    │   │   │   ├── ⚛️ Banner.tsx
+    │   │   │   ├── ⚛️ Nav.tsx
+    │   │   │   └── ⚛️ SelectedPlayerCard.tsx
+    │   │   ├── 📁 type/
+    │   │   │   └── ⚛️ playerType.tsx
+    │   │   ├── ⚛️ App.tsx
+    │   │   ├── 🎨 index.css
+    │   │   └── ⚛️ main.tsx
+    │   ├── 🙈 .gitignore
+    │   ├── ⚡ eslint.config.js
+    │   ├── 🌐 index.html
+    │   ├── 🔒 package-lock.json
+    │   ├── 📦 package.json
+    │   ├── 🔶 tsconfig.app.json
+    │   ├── 🔶 tsconfig.json
+    │   ├── 🔶 tsconfig.node.json
+    │   └── 🔷 vite.config.ts
+    └── 📁 Module 32 - Assignment-5/
         ├── 📁 public/
-        │   ├── 🔶 data.json
         │   ├── 🎨 favicon.svg
-        │   └── 🎨 icons.svg
+        │   ├── 🎨 icons.svg
+        │   └── 🔶 technologies.json
         ├── 📁 src/
         │   ├── 📁 assets/
-        │   │   ├── 🖼️ banner-main.png
-        │   │   ├── 🖼️ bg-shadow.png
+        │   │   ├── 🖼️ banner-stack.png
+        │   │   ├── 🖼️ hamburger.png
         │   │   ├── 🖼️ hero.png
-        │   │   ├── 🖼️ logo-footer.png
-        │   │   ├── 🖼️ logo.png
+        │   │   ├── 🖼️ logo-text.png
         │   │   ├── 🎨 react.svg
         │   │   └── 🎨 vite.svg
-        │   ├── 📁 bpl-dream-11-resources/
-        │   │   ├── 📁 application-design/
-        │   │   │   ├── 🖼️ main-2.jpg
-        │   │   │   └── 🖼️ main.jpg
-        │   │   ├── 📁 assets/
-        │   │   │   ├── 🖼️ banner-main.png
-        │   │   │   ├── 🖼️ bg-shadow.png
-        │   │   │   ├── 🖼️ logo-footer.png
-        │   │   │   └── 🖼️ logo.png
-        │   │   └── 📄 bpl-dream-11-.fig
         │   ├── 📁 components/
-        │   │   ├── 📁 players/
-        │   │   │   ├── ⚛️ AvailablePlayers.tsx
-        │   │   │   ├── ⚛️ PlayerCard.tsx
-        │   │   │   ├── ⚛️ Players.tsx
-        │   │   │   └── ⚛️ SelectedPlayers.tsx
-        │   │   ├── ⚛️ Banner.tsx
-        │   │   ├── ⚛️ Nav.tsx
-        │   │   └── ⚛️ SelectedPlayerCard.tsx
-        │   ├── 📁 type/
-        │   │   └── ⚛️ playerType.tsx
+        │   │   ├── ⚛️ Footer.tsx
+        │   │   ├── ⚛️ Hero.tsx
+        │   │   ├── ⚛️ Navbar.tsx
+        │   │   └── ⚛️ Technologies.tsx
+        │   ├── 📁 types/
+        │   │   └── 🔷 technology.ts
+        │   ├── 🎨 App.css
         │   ├── ⚛️ App.tsx
         │   ├── 🎨 index.css
         │   └── ⚛️ main.tsx
@@ -1292,6 +1363,7 @@ Contains problem-solving challenges and contest submissions, including:
 ---
 
 ## 🛠️ Technologies Learned
+
 - **HTML5**: Semantic tags, tables, forms, audio/video integration.
 - **Git & GitHub**: Version control, repository hosting, basic workflow.
 - **CSS3**: Selectors, Flexbox, Grid, Responsive Web Design, Navigation, Layouts.
@@ -1301,4 +1373,5 @@ Contains problem-solving challenges and contest submissions, including:
 - **React & Vite**: Functional components, JSX, Props passing & destructuring, Conditional rendering, List rendering (`.map`), `useState` state management, Event handling, `useEffect` data fetching (APIs), component styling, Vite dev toolchain.
 
 ---
-*Keep learning, keep coding!* 💻🔥
+
+_Keep learning, keep coding!_ 💻🔥
