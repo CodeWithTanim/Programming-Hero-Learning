@@ -176,6 +176,10 @@ Comprehensive introduction to Next.js App Router architecture and routing fundam
 
 Explores core Next.js rendering architectures, focusing on Server Components (RSC) versus Client Components (`'use client'`). Covers server-side asynchronous data fetching (`async`/`await` in `page.jsx`), integrating external REST APIs (JSONPlaceholder and Cloudinary-backed food APIs), client-side interactivity and state management (`useState` in `Counter.jsx`), advanced image optimization with `next/image` and remote pattern domain configurations in `next.config.mjs`, and rendering dynamic product/post card feeds with DaisyUI and Tailwind CSS.
 
+### 🔹 `Milestone 6 Module 35 - Advance Data Fetching and UI Integration`
+
+Focuses on advanced Next.js data fetching paradigms, caching strategies, and rendering optimizations. Covers Static Site Generation (SSG via `{ cache: 'force-cache' }`), Server-Side Rendering (SSR via `{ cache: 'no-store' }`), and Incremental Static Regeneration (ISR with revalidation periods via `next: { revalidate: 20 }`). Explores dynamic route pre-rendering with `generateStaticParams` (`/books/[bookid]`), instant loading states and skeleton UI with streaming (`loading.js` / `loading.jsx`), mock backend integration with `json-server` (`db.json`), React 19 `use` hook and Context API for client-side state sharing (`UserContext.jsx`, `useUser.jsx`), and responsive UI layouts using Tailwind CSS and DaisyUI.
+
 ---
 
 ## 📂 Repository Structure
@@ -1427,7 +1431,40 @@ Explores core Next.js rendering architectures, focusing on Server Components (RS
     │   ├── 📦 package.json
     │   ├── ⚡ postcss.config.mjs
     │   └── 📚 README.md
-    └── 📁 module-34-next.js-rendering-basics/
+    ├── 📁 module-34-next.js-rendering-basics/
+    │   ├── 📁 public/
+    │   │   ├── 🎨 file.svg
+    │   │   ├── 🎨 globe.svg
+    │   │   ├── 🎨 next.svg
+    │   │   ├── 🎨 vercel.svg
+    │   │   └── 🎨 window.svg
+    │   ├── 📁 src/
+    │   │   └── 📁 app/
+    │   │       ├── 📁 components/
+    │   │       │   ├── ⚛️ Counter.jsx
+    │   │       │   ├── ⚛️ FoodCart.jsx
+    │   │       │   └── ⚛️ Post.jsx
+    │   │       ├── 📁 dashboard/
+    │   │       │   └── ⚛️ page.jsx
+    │   │       ├── 📁 menu/
+    │   │       │   └── ⚛️ page.jsx
+    │   │       ├── 📁 post/
+    │   │       │   └── ⚛️ page.jsx
+    │   │       ├── 🖼️ favicon.ico
+    │   │       ├── 🎨 globals.css
+    │   │       ├── ⚡ layout.js
+    │   │       └── ⚡ page.js
+    │   ├── 🙈 .gitignore
+    │   ├── 📖 AGENTS.md
+    │   ├── 📖 CLAUDE.md
+    │   ├── ⚡ eslint.config.mjs
+    │   ├── 🔶 jsconfig.json
+    │   ├── ⚡ next.config.mjs
+    │   ├── 🔒 package-lock.json
+    │   ├── 📦 package.json
+    │   ├── ⚡ postcss.config.mjs
+    │   └── 📚 README.md
+    └── 📁 module-35-advance-data-fetching-and-ui-integration/
         ├── 📁 public/
         │   ├── 🎨 file.svg
         │   ├── 🎨 globe.svg
@@ -1436,23 +1473,33 @@ Explores core Next.js rendering architectures, focusing on Server Components (RS
         │   └── 🎨 window.svg
         ├── 📁 src/
         │   └── 📁 app/
+        │       ├── 📁 books/
+        │       │   ├── 📁 [bookid]/
+        │       │   │   ├── ⚛️ loading.jsx
+        │       │   │   └── ⚛️ page.jsx
+        │       │   └── ⚛️ page.jsx
         │       ├── 📁 components/
-        │       │   ├── ⚛️ Counter.jsx
-        │       │   ├── ⚛️ FoodCart.jsx
-        │       │   └── ⚛️ Post.jsx
-        │       ├── 📁 dashboard/
+        │       │   ├── ⚛️ BookCard.jsx
+        │       │   ├── ⚛️ Navbar.jsx
+        │       │   └── ⚛️ ProductCard.jsx
+        │       ├── 📁 contexts/
+        │       │   └── ⚛️ UserContext.jsx
+        │       ├── 📁 hooks/
+        │       │   └── ⚛️ useUser.jsx
+        │       ├── 📁 posts/
+        │       │   ├── ⚡ loading.js
         │       │   └── ⚛️ page.jsx
-        │       ├── 📁 menu/
-        │       │   └── ⚛️ page.jsx
-        │       ├── 📁 post/
+        │       ├── 📁 products/
         │       │   └── ⚛️ page.jsx
         │       ├── 🖼️ favicon.ico
         │       ├── 🎨 globals.css
         │       ├── ⚡ layout.js
+        │       ├── ⚛️ not-found.jsx
         │       └── ⚡ page.js
         ├── 🙈 .gitignore
         ├── 📖 AGENTS.md
         ├── 📖 CLAUDE.md
+        ├── 🔶 db.json
         ├── ⚡ eslint.config.mjs
         ├── 🔶 jsconfig.json
         ├── ⚡ next.config.mjs
@@ -1473,7 +1520,7 @@ Explores core Next.js rendering architectures, focusing on Server Components (RS
 - **JavaScript (ES6+)**: Data types, Conditionals, Loops, Arrays, Objects, Functions, ES6+ features, Array Methods (`map`, `filter`, `find`, `reduce`), Destructuring, DOM manipulation, Events, BOM, Web Storage (`localStorage`/`sessionStorage`), Timers (`setTimeout`/`setInterval`).
 - **TypeScript**: Type annotations, Interfaces, Type Aliases, Generics, OOP (Classes, Inheritance, Access Modifiers, Polymorphism, Abstraction), Utility Types, Real-world Problem Solving.
 - **React & Vite**: Functional components, JSX, Props passing & destructuring, Conditional rendering, List rendering (`.map`), `useState` state management, Event handling, `useEffect` data fetching (APIs), component styling, Vite dev toolchain.
-- **Next.js**: App Router, Server Components (RSC), Client Components (`'use client'`), Root & Nested Layouts, Static & Dynamic Routing (`[postid]`, `[userid]`), Custom 404 (`not-found`), Server-side Data Fetching (`async`/`await`), Image Optimization (`next/image` with remote patterns), Next.js Components, Tailwind CSS & DaisyUI Integration.
+- **Next.js**: App Router, Server Components (RSC), Client Components (`'use client'`), Root & Nested Layouts, Static & Dynamic Routing (`[postid]`, `[userid]`), SSG (`force-cache`, `generateStaticParams`), SSR (`no-store`), ISR (`revalidate`), Streaming & Skeleton Loaders (`loading.jsx`), Custom 404 (`not-found`), Server Data Fetching (`async`/`await`), Image Optimization (`next/image` with remote patterns), React 19 `use` hook, Tailwind CSS & DaisyUI Integration.
 
 ---
 

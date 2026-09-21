@@ -1,0 +1,138 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Wireless Headphones",
+      "price": 2499,
+      "category": "Electronics",
+      "brand": "SoundMax",
+      "rating": 4.5,
+      "stock": 25,
+      "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e",
+      "description": "Premium wireless headphones with deep bass, clear audio, and long battery life."
+    },
+    {
+      "id": 2,
+      "name": "Smart Watch",
+      "price": 3999,
+      "category": "Electronics",
+      "brand": "TechTime",
+      "rating": 4.3,
+      "stock": 18,
+      "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30",
+      "description": "Modern smartwatch with fitness tracking, heart-rate monitoring, and notifications."
+    },
+    {
+      "id": 3,
+      "name": "Running Shoes",
+      "price": 2999,
+      "category": "Footwear",
+      "brand": "RunPro",
+      "rating": 4.7,
+      "stock": 32,
+      "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff",
+      "description": "Lightweight running shoes designed for comfort, support, and everyday workouts."
+    },
+    {
+      "id": 4,
+      "name": "Leather Backpack",
+      "price": 1899,
+      "category": "Accessories",
+      "brand": "UrbanCarry",
+      "rating": 4.4,
+      "stock": 15,
+      "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62",
+      "description": "Stylish and durable backpack with multiple compartments for work and travel."
+    },
+    {
+      "id": 5,
+      "name": "Mechanical Keyboard",
+      "price": 4599,
+      "category": "Computer Accessories",
+      "brand": "KeyMaster",
+      "rating": 4.8,
+      "stock": 12,
+      "image": "https://images.unsplash.com/photo-1587829741301-dc798b83add3",
+      "description": "RGB mechanical keyboard with tactile switches, customizable lighting, and a durable build."
+    },
+    {
+      "id": 6,
+      "name": "Classic Sunglasses",
+      "price": 1499,
+      "category": "Fashion",
+      "brand": "SunStyle",
+      "rating": 4.2,
+      "stock": 40,
+      "image": "https://images.unsplash.com/photo-1511499767150-a48a237f0083",
+      "description": "Classic sunglasses with UV protection and a lightweight frame for everyday use."
+    }
+  ],
+  "books": [
+    {
+      "id": 1,
+      "title": "The Silent Patient",
+      "author": "Alex Michaelides",
+      "price": 499,
+      "category": "Thriller",
+      "rating": 4.6,
+      "stock": 20,
+      "image": "https://images.unsplash.com/photo-1544947950-fa07a98d237f",
+      "description": "A psychological thriller about a famous painter who suddenly stops speaking after a mysterious crime."
+    },
+    {
+      "id": 2,
+      "title": "Atomic Habits",
+      "author": "James Clear",
+      "price": 599,
+      "category": "Self Development",
+      "rating": 4.8,
+      "stock": 35,
+      "image": "https://images.unsplash.com/photo-1516979187457-637abb4f9353",
+      "description": "A practical guide to building good habits, breaking bad ones, and making small improvements every day."
+    },
+    {
+      "id": 3,
+      "title": "The Alchemist",
+      "author": "Paulo Coelho",
+      "price": 399,
+      "category": "Fiction",
+      "rating": 4.7,
+      "stock": 28,
+      "image": "https://images.unsplash.com/photo-1511108690759-009324a90311",
+      "description": "A philosophical novel about following your dreams and discovering your personal journey."
+    },
+    {
+      "id": 4,
+      "title": "Clean Code",
+      "author": "Robert C. Martin",
+      "price": 899,
+      "category": "Programming",
+      "rating": 4.7,
+      "stock": 15,
+      "image": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4",
+      "description": "A programming book focused on writing readable, maintainable, and professional software."
+    },
+    {
+      "id": 5,
+      "title": "Rich Dad Poor Dad",
+      "author": "Robert T. Kiyosaki",
+      "price": 449,
+      "category": "Finance",
+      "rating": 4.5,
+      "stock": 24,
+      "image": "https://images.unsplash.com/photo-1554224155-6726b3ff858f",
+      "description": "A personal finance book exploring different approaches to money, investing, and financial independence."
+    },
+    {
+      "id": 6,
+      "title": "Deep Work",
+      "author": "Cal Newport",
+      "price": 549,
+      "category": "Productivity",
+      "rating": 4.6,
+      "stock": 18,
+      "image": "https://images.unsplash.com/photo-1495446815901-a7297e633e8d",
+      "description": "A guide to focused work and developing the ability to concentrate without distraction."
+    }
+  ]
+}
