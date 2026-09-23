@@ -176,7 +176,7 @@ Comprehensive introduction to Next.js App Router architecture and routing fundam
 
 Explores core Next.js rendering architectures, focusing on Server Components (RSC) versus Client Components (`'use client'`). Covers server-side asynchronous data fetching (`async`/`await` in `page.jsx`), integrating external REST APIs (JSONPlaceholder and Cloudinary-backed food APIs), client-side interactivity and state management (`useState` in `Counter.jsx`), advanced image optimization with `next/image` and remote pattern domain configurations in `next.config.mjs`, and rendering dynamic product/post card feeds with DaisyUI and Tailwind CSS.
 
-### 🔹 `Milestone 6 Module 35 - Advance Data Fetching and UI Integration`
+### 🔹 `Milestone 6 Module 35 - Advanced Data Fetching and UI Integration`
 
 Focuses on advanced Next.js data fetching paradigms, caching strategies, and rendering optimizations. Covers Static Site Generation (SSG via `{ cache: 'force-cache' }`), Server-Side Rendering (SSR via `{ cache: 'no-store' }`), and Incremental Static Regeneration (ISR with revalidation periods via `next: { revalidate: 20 }`). Explores dynamic route pre-rendering with `generateStaticParams` (`/books/[bookid]`), instant loading states and skeleton UI with streaming (`loading.js` / `loading.jsx`), mock backend integration with `json-server` (`db.json`), React 19 `use` hook and Context API for client-side state sharing (`UserContext.jsx`, `useUser.jsx`), and responsive UI layouts using Tailwind CSS and DaisyUI.
 
