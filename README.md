@@ -180,6 +180,18 @@ Explores core Next.js rendering architectures, focusing on Server Components (RS
 
 Focuses on advanced Next.js data fetching paradigms, caching strategies, and rendering optimizations. Covers Static Site Generation (SSG via `{ cache: 'force-cache' }`), Server-Side Rendering (SSR via `{ cache: 'no-store' }`), and Incremental Static Regeneration (ISR with revalidation periods via `next: { revalidate: 20 }`). Explores dynamic route pre-rendering with `generateStaticParams` (`/books/[bookid]`), instant loading states and skeleton UI with streaming (`loading.js` / `loading.jsx`), mock backend integration with `json-server` (`db.json`), React 19 `use` hook and Context API for client-side state sharing (`UserContext.jsx`, `useUser.jsx`), and responsive UI layouts using Tailwind CSS and DaisyUI.
 
+### 🔹 `Milestone 6 Module 36 - Project with Next.js and TypeScript`
+
+Building a full-featured Book Review and Reading Tracker web application using Next.js App Router and TypeScript. Covers type-safe domain models (`IBook`), dynamic routing (`/books/[id]`) with async params resolution, global state management with React Context API (`BookContext`) for managing Read Books and Wishlist collections, toast notifications with `react-toastify`, interactive data visualization and reading progress charts using Recharts (`BarChart`, custom shape `TriangleBar`), streaming fallbacks (`loading.tsx`), and responsive modern UI with Tailwind CSS and DaisyUI.
+
+### 🔹 `Milestone 6 Conceptual Session 10 - Next.js with TypeScript Project`
+
+Comprehensive conceptual project session building **Hero IO**, a modern App Store and application marketplace using Next.js App Router and TypeScript. Covers type-safe domain models (`TApp`, `TRating`), static route pre-rendering with `generateStaticParams` (`/apps/[id]`), custom 404 handling (`not-found.tsx`) and streaming fallbacks (`loading.tsx`), global app installation state management with React Context API (`AppContext`, `AppProvider`), interactive rating distribution progress bars, dynamic installed apps management (`/installation`), and modern responsive styling with Tailwind CSS, DaisyUI, React Icons, and React-Toastify.
+
+### 🔹 `Milestone 6 Module 37 - Assignment-6`
+
+Building **FitLog**, a comprehensive dark-themed daily workout management and routine planning web application using Next.js 16 (App Router), React 19, TypeScript, and Tailwind CSS v4. Features a searchable 12+ workout library across major muscle groups with difficulty and calorie metrics, dynamic individual exercise detail views (`/workout/[id]`) with step-by-step form instructions, daily training plan builder (`/my-plan`) enforcing a deliberate 5-exercise daily cap, dedicated "Save for Later" bookmarking list, real-time live metric summaries (total exercises, duration, and calories burned), interactive workout completion tracking ("Mark as Done"), sorting options, persistent local storage synchronization via custom `WorkoutContext`, and custom 404 page routing.
+
 ---
 
 ## 📂 Repository Structure
@@ -1378,6 +1390,74 @@ Focuses on advanced Next.js data fetching paradigms, caching strategies, and ren
 │       ├── 🔶 tsconfig.node.json
 │       └── 🔷 vite.config.ts
 └── 📁 Milestone 6 - Next.js - Pages, Routing and Beyond/
+    ├── 📁 conceptual-session-10-next.js-with-typescript-project/
+    │   ├── 📁 public/
+    │   │   ├── 🔶 data.json
+    │   │   ├── 🎨 file.svg
+    │   │   ├── 🎨 globe.svg
+    │   │   ├── 🎨 next.svg
+    │   │   ├── 🎨 vercel.svg
+    │   │   └── 🎨 window.svg
+    │   ├── 📁 src/
+    │   │   ├── 📁 app/
+    │   │   │   ├── 📁 apps/
+    │   │   │   │   ├── 📁 [id]/
+    │   │   │   │   │   └── ⚛️ page.tsx
+    │   │   │   │   ├── ⚛️ loading.tsx
+    │   │   │   │   └── ⚛️ page.tsx
+    │   │   │   ├── 📁 installation/
+    │   │   │   │   └── ⚛️ page.tsx
+    │   │   │   ├── 🖼️ favicon.ico
+    │   │   │   ├── 🎨 globals.css
+    │   │   │   ├── ⚛️ layout.tsx
+    │   │   │   ├── ⚛️ loading.tsx
+    │   │   │   ├── ⚛️ not-found.tsx
+    │   │   │   └── ⚛️ page.tsx
+    │   │   ├── 📁 assets/
+    │   │   │   ├── 🖼️ App-Error.png
+    │   │   │   ├── 🖼️ demo-app (1).webp
+    │   │   │   ├── 🖼️ demo-app (2).webp
+    │   │   │   ├── 🖼️ demo-app (3).webp
+    │   │   │   ├── 🖼️ demo-app (4).webp
+    │   │   │   ├── 🖼️ demo-app (5).webp
+    │   │   │   ├── 🖼️ demo-app (6).webp
+    │   │   │   ├── 🖼️ error-404.png
+    │   │   │   ├── 📄 Hero IO.fig
+    │   │   │   ├── 🖼️ hero.png
+    │   │   │   ├── 🖼️ icon-downloads.png
+    │   │   │   ├── 🖼️ icon-ratings.png
+    │   │   │   ├── 🖼️ icon-review.png
+    │   │   │   └── 🖼️ logo.png
+    │   │   ├── 📁 components/
+    │   │   │   ├── 📁 Apps/
+    │   │   │   │   └── ⚛️ InstallAppButton.tsx
+    │   │   │   ├── 📁 homepage/
+    │   │   │   │   ├── ⚛️ Banner.tsx
+    │   │   │   │   ├── ⚛️ Hero.tsx
+    │   │   │   │   ├── ⚛️ TrandingApp.tsx
+    │   │   │   │   └── ⚛️ TrendingApp.tsx
+    │   │   │   ├── 📁 shared/
+    │   │   │   │   ├── ⚛️ AppCard.tsx
+    │   │   │   │   ├── ⚛️ Footer.tsx
+    │   │   │   │   └── ⚛️ Navbar.tsx
+    │   │   │   └── 📁 states/
+    │   │   │       └── ⚛️ States.tsx
+    │   │   ├── 📁 context/
+    │   │   │   ├── ⚛️ AppContext.tsx
+    │   │   │   └── ⚛️ AppProvider.tsx
+    │   │   ├── 📁 lib/
+    │   │   │   └── 🔷 apps.ts
+    │   │   └── 📁 types/
+    │   │       ├── 🔷 apps.type.ts
+    │   │       └── 🔷 apps.types.ts
+    │   ├── 🙈 .gitignore
+    │   ├── ⚡ eslint.config.mjs
+    │   ├── 🔷 next.config.ts
+    │   ├── 🔒 package-lock.json
+    │   ├── 📦 package.json
+    │   ├── ⚡ postcss.config.mjs
+    │   ├── 📚 README.md
+    │   └── 🔶 tsconfig.json
     ├── 📁 module-33-next.js-foundation-and-routing/
     │   ├── 📁 public/
     │   │   ├── 📁 images/
@@ -1464,7 +1544,102 @@ Focuses on advanced Next.js data fetching paradigms, caching strategies, and ren
     │   ├── 📦 package.json
     │   ├── ⚡ postcss.config.mjs
     │   └── 📚 README.md
-    └── 📁 module-35-advance-data-fetching-and-ui-integration/
+    ├── 📁 module-35-advance-data-fetching-and-ui-integration/
+    │   ├── 📁 public/
+    │   │   ├── 🎨 file.svg
+    │   │   ├── 🎨 globe.svg
+    │   │   ├── 🎨 next.svg
+    │   │   ├── 🎨 vercel.svg
+    │   │   └── 🎨 window.svg
+    │   ├── 📁 src/
+    │   │   └── 📁 app/
+    │   │       ├── 📁 books/
+    │   │       │   ├── 📁 [bookid]/
+    │   │       │   │   ├── ⚛️ loading.jsx
+    │   │       │   │   └── ⚛️ page.jsx
+    │   │       │   └── ⚛️ page.jsx
+    │   │       ├── 📁 components/
+    │   │       │   ├── ⚛️ BookCard.jsx
+    │   │       │   ├── ⚛️ Navbar.jsx
+    │   │       │   └── ⚛️ ProductCard.jsx
+    │   │       ├── 📁 contexts/
+    │   │       │   └── ⚛️ UserContext.jsx
+    │   │       ├── 📁 hooks/
+    │   │       │   └── ⚛️ useUser.jsx
+    │   │       ├── 📁 posts/
+    │   │       │   ├── ⚡ loading.js
+    │   │       │   └── ⚛️ page.jsx
+    │   │       ├── 📁 products/
+    │   │       │   └── ⚛️ page.jsx
+    │   │       ├── 🖼️ favicon.ico
+    │   │       ├── 🎨 globals.css
+    │   │       ├── ⚡ layout.js
+    │   │       ├── ⚛️ not-found.jsx
+    │   │       └── ⚡ page.js
+    │   ├── 🙈 .gitignore
+    │   ├── 📖 AGENTS.md
+    │   ├── 📖 CLAUDE.md
+    │   ├── 🔶 db.json
+    │   ├── ⚡ eslint.config.mjs
+    │   ├── 🔶 jsconfig.json
+    │   ├── ⚡ next.config.mjs
+    │   ├── 🔒 package-lock.json
+    │   ├── 📦 package.json
+    │   ├── ⚡ postcss.config.mjs
+    │   └── 📚 README.md
+    ├── 📁 module-36-project-with-next.js-and-typescript/
+    │   ├── 📁 public/
+    │   │   ├── 🔶 booksData.json
+    │   │   ├── 🎨 file.svg
+    │   │   ├── 🎨 globe.svg
+    │   │   ├── 🎨 next.svg
+    │   │   ├── 🎨 vercel.svg
+    │   │   └── 🎨 window.svg
+    │   ├── 📁 src/
+    │   │   ├── 📁 app/
+    │   │   │   ├── 📁 books/
+    │   │   │   │   ├── 📁 [id]/
+    │   │   │   │   │   ├── ⚛️ loading.tsx
+    │   │   │   │   │   └── ⚛️ page.tsx
+    │   │   │   │   ├── ⚛️ loading.tsx
+    │   │   │   │   └── ⚛️ page.tsx
+    │   │   │   ├── 📁 listed-books/
+    │   │   │   │   └── ⚛️ page.tsx
+    │   │   │   ├── 📁 read-books/
+    │   │   │   │   └── ⚛️ page.tsx
+    │   │   │   ├── 🖼️ favicon.ico
+    │   │   │   ├── 🎨 globals.css
+    │   │   │   ├── ⚛️ layout.tsx
+    │   │   │   ├── ⚛️ loading.tsx
+    │   │   │   └── ⚛️ page.tsx
+    │   │   ├── 📁 assets/
+    │   │   │   ├── 🖼️ book.ico
+    │   │   │   └── 🖼️ hero_img.jpg
+    │   │   ├── 📁 components/
+    │   │   │   ├── 📁 bookDetails/
+    │   │   │   │   ├── ⚛️ ReadButton.tsx
+    │   │   │   │   └── ⚛️ WishlistButton.tsx
+    │   │   │   ├── 📁 homepage/
+    │   │   │   │   ├── ⚛️ Banner.tsx
+    │   │   │   │   └── ⚛️ Books.tsx
+    │   │   │   └── 📁 shared/
+    │   │   │       ├── ⚛️ BookCard.tsx
+    │   │   │       ├── ⚛️ Footer.tsx
+    │   │   │       ├── ⚛️ ListedBookCard.tsx
+    │   │   │       └── ⚛️ Navbar.tsx
+    │   │   ├── 📁 context/
+    │   │   │   └── ⚛️ BookContext.tsx
+    │   │   └── 📁 types/
+    │   │       └── ⚛️ books.type.tsx
+    │   ├── 🙈 .gitignore
+    │   ├── ⚡ eslint.config.mjs
+    │   ├── 🔷 next.config.ts
+    │   ├── 🔒 package-lock.json
+    │   ├── 📦 package.json
+    │   ├── ⚡ postcss.config.mjs
+    │   ├── 📚 README.md
+    │   └── 🔶 tsconfig.json
+    └── 📁 module-37-assignment-6-fitlog/
         ├── 📁 public/
         │   ├── 🎨 file.svg
         │   ├── 🎨 globe.svg
@@ -1472,41 +1647,45 @@ Focuses on advanced Next.js data fetching paradigms, caching strategies, and ren
         │   ├── 🎨 vercel.svg
         │   └── 🎨 window.svg
         ├── 📁 src/
-        │   └── 📁 app/
-        │       ├── 📁 books/
-        │       │   ├── 📁 [bookid]/
-        │       │   │   ├── ⚛️ loading.jsx
-        │       │   │   └── ⚛️ page.jsx
-        │       │   └── ⚛️ page.jsx
-        │       ├── 📁 components/
-        │       │   ├── ⚛️ BookCard.jsx
-        │       │   ├── ⚛️ Navbar.jsx
-        │       │   └── ⚛️ ProductCard.jsx
-        │       ├── 📁 contexts/
-        │       │   └── ⚛️ UserContext.jsx
-        │       ├── 📁 hooks/
-        │       │   └── ⚛️ useUser.jsx
-        │       ├── 📁 posts/
-        │       │   ├── ⚡ loading.js
-        │       │   └── ⚛️ page.jsx
-        │       ├── 📁 products/
-        │       │   └── ⚛️ page.jsx
-        │       ├── 🖼️ favicon.ico
-        │       ├── 🎨 globals.css
-        │       ├── ⚡ layout.js
-        │       ├── ⚛️ not-found.jsx
-        │       └── ⚡ page.js
+        │   ├── 📁 app/
+        │   │   ├── 📁 my-plan/
+        │   │   │   └── ⚛️ page.tsx
+        │   │   ├── 📁 workout/
+        │   │   │   └── 📁 [id]/
+        │   │   │       └── ⚛️ page.tsx
+        │   │   ├── 🖼️ favicon.ico
+        │   │   ├── 🎨 globals.css
+        │   │   ├── ⚛️ layout.tsx
+        │   │   ├── ⚛️ loading.tsx
+        │   │   ├── ⚛️ not-found.tsx
+        │   │   └── ⚛️ page.tsx
+        │   ├── 📁 assets/
+        │   │   ├── 🖼️ banner.png
+        │   │   └── 🖼️ logo.png
+        │   ├── 📁 components/
+        │   │   ├── 📁 homepage/
+        │   │   │   ├── ⚛️ Banner.tsx
+        │   │   │   └── ⚛️ Library.tsx
+        │   │   ├── 📁 shared/
+        │   │   │   ├── ⚛️ Footer.tsx
+        │   │   │   ├── ⚛️ Navbar.tsx
+        │   │   │   ├── ⚛️ PlannedWorkoutCard.tsx
+        │   │   │   └── ⚛️ WorkoutCard.tsx
+        │   │   └── 📁 workoutDetails/
+        │   │       ├── ⚛️ AddToPlanButton.tsx
+        │   │       └── ⚛️ SaveForLaterButton.tsx
+        │   ├── 📁 context/
+        │   │   └── ⚛️ WorkoutContext.tsx
+        │   └── 📁 types/
+        │       └── 🔷 workout.type.ts
         ├── 🙈 .gitignore
-        ├── 📖 AGENTS.md
-        ├── 📖 CLAUDE.md
-        ├── 🔶 db.json
         ├── ⚡ eslint.config.mjs
-        ├── 🔶 jsconfig.json
-        ├── ⚡ next.config.mjs
+        ├── 🔷 next.config.ts
         ├── 🔒 package-lock.json
         ├── 📦 package.json
         ├── ⚡ postcss.config.mjs
-        └── 📚 README.md
+        ├── 📚 README.md
+        └── 🔶 tsconfig.json
 ```
 
 ---
@@ -1520,7 +1699,7 @@ Focuses on advanced Next.js data fetching paradigms, caching strategies, and ren
 - **JavaScript (ES6+)**: Data types, Conditionals, Loops, Arrays, Objects, Functions, ES6+ features, Array Methods (`map`, `filter`, `find`, `reduce`), Destructuring, DOM manipulation, Events, BOM, Web Storage (`localStorage`/`sessionStorage`), Timers (`setTimeout`/`setInterval`).
 - **TypeScript**: Type annotations, Interfaces, Type Aliases, Generics, OOP (Classes, Inheritance, Access Modifiers, Polymorphism, Abstraction), Utility Types, Real-world Problem Solving.
 - **React & Vite**: Functional components, JSX, Props passing & destructuring, Conditional rendering, List rendering (`.map`), `useState` state management, Event handling, `useEffect` data fetching (APIs), component styling, Vite dev toolchain.
-- **Next.js**: App Router, Server Components (RSC), Client Components (`'use client'`), Root & Nested Layouts, Static & Dynamic Routing (`[postid]`, `[userid]`), SSG (`force-cache`, `generateStaticParams`), SSR (`no-store`), ISR (`revalidate`), Streaming & Skeleton Loaders (`loading.jsx`), Custom 404 (`not-found`), Server Data Fetching (`async`/`await`), Image Optimization (`next/image` with remote patterns), React 19 `use` hook, Tailwind CSS & DaisyUI Integration.
+- **Next.js**: App Router, TypeScript Integration, Server Components (RSC), Client Components (`'use client'`), Root & Nested Layouts, Static & Dynamic Routing (`[id]`, `[postid]`, `[userid]`), SSG (`force-cache`, `generateStaticParams`), SSR (`no-store`), ISR (`revalidate`), Streaming & Skeleton Loaders (`loading.tsx`), Custom 404 (`not-found`), Server Data Fetching (`async`/`await`), Image Optimization (`next/image`), Recharts Data Visualization, React Context State, Tailwind CSS & DaisyUI Integration.
 
 ---
 
