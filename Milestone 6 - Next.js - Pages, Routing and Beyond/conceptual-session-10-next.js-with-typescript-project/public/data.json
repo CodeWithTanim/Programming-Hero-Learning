@@ -1,0 +1,362 @@
+[
+  {
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/WhatsApp.svg",
+    "title": "WhatsApp Messenger",
+    "companyName": "WhatsApp LLC",
+    "id": 1,
+    "description": "WhatsApp is a messaging and video calling app that lets people send messages, make voice and video calls, share photos and documents, and communicate through group chats and Status.",
+    "size": 95,
+    "reviews": 243000000,
+    "ratingAvg": 4.6,
+    "downloads": 10000000000,
+    "ratings": [
+      { "name": "1 star", "count": 4860000 },
+      { "name": "2 star", "count": 7290000 },
+      { "name": "3 star", "count": 14580000 },
+      { "name": "4 star", "count": 38880000 },
+      { "name": "5 star", "count": 177390000 }
+    ]
+  },
+  {
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Instagram_icon.png",
+    "title": "Instagram",
+    "companyName": "Instagram",
+    "id": 2,
+    "description": "Instagram is a social platform for sharing photos and videos, watching Reels, posting Stories, messaging friends, and discovering creators and interests.",
+    "size": 90,
+    "reviews": 169000000,
+    "ratingAvg": 4.0,
+    "downloads": 5000000000,
+    "ratings": [
+      { "name": "1 star", "count": 10140000 },
+      { "name": "2 star", "count": 13520000 },
+      { "name": "3 star", "count": 21970000 },
+      { "name": "4 star", "count": 43940000 },
+      { "name": "5 star", "count": 79430000 }
+    ]
+  },
+  {
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/YouTube_social_dark_circle_(2017).svg",
+    "title": "YouTube",
+    "companyName": "Google LLC",
+    "id": 3,
+    "description": "YouTube lets users watch videos, follow channels, discover trending content, create videos, livestream, and interact with creators and communities.",
+    "size": 120,
+    "reviews": 172000000,
+    "ratingAvg": 4.1,
+    "downloads": 10000000000,
+    "ratings": [
+      { "name": "1 star", "count": 6880000 },
+      { "name": "2 star", "count": 10320000 },
+      { "name": "3 star", "count": 18920000 },
+      { "name": "4 star", "count": 39560000 },
+      { "name": "5 star", "count": 96320000 }
+    ]
+  },
+  {
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Spotify.png",
+    "title": "Spotify",
+    "companyName": "Spotify AB",
+    "id": 4,
+    "description": "Spotify is a music and podcast streaming app that lets users discover songs, albums, playlists, podcasts, audiobooks, and personalized recommendations.",
+    "size": 85,
+    "reviews": 36300000,
+    "ratingAvg": 4.3,
+    "downloads": 1000000000,
+    "ratings": [
+      { "name": "1 star", "count": 1089000 },
+      { "name": "2 star", "count": 1452000 },
+      { "name": "3 star", "count": 2904000 },
+      { "name": "4 star", "count": 7260000 },
+      { "name": "5 star", "count": 23595000 }
+    ]
+  },
+  {
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Google_Maps_icon_(2020).svg",
+    "title": "Google Maps",
+    "companyName": "Google LLC",
+    "id": 5,
+    "description": "Google Maps provides navigation, live traffic information, public transportation directions, business discovery, reviews, Street View, and location services.",
+    "size": 110,
+    "reviews": 19500000,
+    "ratingAvg": 3.2,
+    "downloads": 10000000000,
+    "ratings": [
+      { "name": "1 star", "count": 2730000 },
+      { "name": "2 star", "count": 2730000 },
+      { "name": "3 star", "count": 3510000 },
+      { "name": "4 star", "count": 4875000 },
+      { "name": "5 star", "count": 5655000 }
+    ]
+  },
+  {
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/TikTok-icon2.svg",
+    "title": "TikTok",
+    "companyName": "TikTok Pte. Ltd.",
+    "id": 6,
+    "description": "TikTok is a short-form video platform where users discover, create, watch, and share videos, livestreams, trends, music, and creative content.",
+    "size": 180,
+    "reviews": 69900000,
+    "ratingAvg": 4.0,
+    "downloads": 1000000000,
+    "ratings": [
+      { "name": "1 star", "count": 4194000 },
+      { "name": "2 star", "count": 5592000 },
+      { "name": "3 star", "count": 9087000 },
+      { "name": "4 star", "count": 18174000 },
+      { "name": "5 star", "count": 32853000 }
+    ]
+  },
+  {
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Facebook_Logo_(2019).png",
+    "title": "Facebook",
+    "companyName": "Meta Platforms, Inc.",
+    "id": 7,
+    "description": "Facebook is a social networking app for connecting with friends, joining communities, watching videos, exploring interests, and using Marketplace.",
+    "size": 90,
+    "reviews": 186000000,
+    "ratingAvg": 4.6,
+    "downloads": 10000000000,
+    "ratings": [
+      { "name": "1 star", "count": 3720000 },
+      { "name": "2 star", "count": 5580000 },
+      { "name": "3 star", "count": 11160000 },
+      { "name": "4 star", "count": 29760000 },
+      { "name": "5 star", "count": 135780000 }
+    ]
+  },
+  {
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Gmail_icon_(2020).svg",
+    "title": "Gmail",
+    "companyName": "Google LLC",
+    "id": 8,
+    "description": "Gmail is Google's email app with secure messaging, multiple account support, powerful search, inbox organization, and AI-powered productivity features.",
+    "size": 80,
+    "reviews": 14400000,
+    "ratingAvg": 4.3,
+    "downloads": 10000000000,
+    "ratings": [
+      { "name": "1 star", "count": 432000 },
+      { "name": "2 star", "count": 576000 },
+      { "name": "3 star", "count": 1152000 },
+      { "name": "4 star", "count": 2880000 },
+      { "name": "5 star", "count": 9360000 }
+    ]
+  },
+  {
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Google_Chrome_icon_(February_2022).svg",
+    "title": "Google Chrome",
+    "companyName": "Google LLC",
+    "id": 9,
+    "description": "Google Chrome is a mobile web browser with Google Search, Google Lens, translation, password management, security features, and cross-device syncing.",
+    "size": 120,
+    "reviews": 49200000,
+    "ratingAvg": 4.1,
+    "downloads": 10000000000,
+    "ratings": [
+      { "name": "1 star", "count": 1968000 },
+      { "name": "2 star", "count": 2952000 },
+      { "name": "3 star", "count": 5412000 },
+      { "name": "4 star", "count": 11316000 },
+      { "name": "5 star", "count": 27552000 }
+    ]
+  },
+  {
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Facebook_Messenger_logo_2020.svg",
+    "title": "Messenger",
+    "companyName": "Meta Platforms, Inc.",
+    "id": 10,
+    "description": "Messenger is a communication app for messaging friends and family, making voice and video calls, sharing photos, and connecting through communities.",
+    "size": 75,
+    "reviews": 114000000,
+    "ratingAvg": 4.4,
+    "downloads": 5000000000,
+    "ratings": [
+      { "name": "1 star", "count": 3420000 },
+      { "name": "2 star", "count": 4560000 },
+      { "name": "3 star", "count": 9120000 },
+      { "name": "4 star", "count": 22800000 },
+      { "name": "5 star", "count": 74100000 }
+    ]
+  },
+  {
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Telegram_2019_Logo.svg",
+    "title": "Telegram",
+    "companyName": "Telegram FZ-LLC",
+    "id": 11,
+    "description": "Telegram is a cloud-based messaging app focused on fast communication, synchronized chats, large groups, channels, file sharing, and multimedia messaging.",
+    "size": 80,
+    "reviews": 17200000,
+    "ratingAvg": 3.8,
+    "downloads": 1000000000,
+    "ratings": [
+      { "name": "1 star", "count": 1548000 },
+      { "name": "2 star", "count": 1892000 },
+      { "name": "3 star", "count": 2752000 },
+      { "name": "4 star", "count": 4644000 },
+      { "name": "5 star", "count": 6364000 }
+    ]
+  },
+  {
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Discord_logo.svg",
+    "title": "Discord",
+    "companyName": "Discord Inc.",
+    "id": 12,
+    "description": "Discord is a communication and community platform where users can chat through text, voice, and video, build communities, and share media.",
+    "size": 100,
+    "reviews": 7010000,
+    "ratingAvg": 4.3,
+    "downloads": 500000000,
+    "ratings": [
+      { "name": "1 star", "count": 210300 },
+      { "name": "2 star", "count": 280400 },
+      { "name": "3 star", "count": 560800 },
+      { "name": "4 star", "count": 1402000 },
+      { "name": "5 star", "count": 4556500 }
+    ]
+  },
+  {
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Snapchat_logo.svg",
+    "title": "Snapchat",
+    "companyName": "Snap Inc.",
+    "id": 13,
+    "description": "Snapchat is a camera-first social app for sharing photos and videos, messaging friends, using AR Lenses, watching Stories, and video chatting.",
+    "size": 110,
+    "reviews": 39700000,
+    "ratingAvg": 4.2,
+    "downloads": 1000000000,
+    "ratings": [
+      { "name": "1 star", "count": 1588000 },
+      { "name": "2 star", "count": 2382000 },
+      { "name": "3 star", "count": 4367000 },
+      { "name": "4 star", "count": 9131000 },
+      { "name": "5 star", "count": 22232000 }
+    ]
+  },
+  {
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Pinterest_Logo.svg",
+    "title": "Pinterest",
+    "companyName": "Pinterest",
+    "id": 14,
+    "description": "Pinterest is an inspiration and discovery platform where users find ideas, save Pins, create boards, explore trends, and discover products.",
+    "size": 90,
+    "reviews": 11600000,
+    "ratingAvg": 4.3,
+    "downloads": 1000000000,
+    "ratings": [
+      { "name": "1 star", "count": 348000 },
+      { "name": "2 star", "count": 464000 },
+      { "name": "3 star", "count": 928000 },
+      { "name": "4 star", "count": 2320000 },
+      { "name": "5 star", "count": 7540000 }
+    ]
+  },
+  {
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Netflix_2015_N_logo.svg",
+    "title": "Netflix",
+    "companyName": "Netflix, Inc.",
+    "id": 15,
+    "description": "Netflix is a streaming app for watching series, films, documentaries, live events, podcasts, and games on supported mobile devices.",
+    "size": 75,
+    "reviews": 15800000,
+    "ratingAvg": 4.3,
+    "downloads": 1000000000,
+    "ratings": [
+      { "name": "1 star", "count": 474000 },
+      { "name": "2 star", "count": 632000 },
+      { "name": "3 star", "count": 1264000 },
+      { "name": "4 star", "count": 3160000 },
+      { "name": "5 star", "count": 10270000 }
+    ]
+  },
+  {
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Duolingo_logo.svg",
+    "title": "Duolingo",
+    "companyName": "Duolingo",
+    "id": 16,
+    "description": "Duolingo is a language learning app offering short interactive lessons for languages along with courses in subjects such as math, music, and chess.",
+    "size": 65,
+    "reviews": 49100000,
+    "ratingAvg": 4.7,
+    "downloads": 500000000,
+    "ratings": [
+      { "name": "1 star", "count": 491000 },
+      { "name": "2 star", "count": 982000 },
+      { "name": "3 star", "count": 1964000 },
+      { "name": "4 star", "count": 6383000 },
+      { "name": "5 star", "count": 39280000 }
+    ]
+  },
+  {
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Notion_app_logo.png",
+    "title": "Notion",
+    "companyName": "Notion Labs, Inc.",
+    "id": 17,
+    "description": "Notion is an all-in-one workspace for notes, tasks, projects, databases, collaboration, and AI-powered organization.",
+    "size": 85,
+    "reviews": 390000,
+    "ratingAvg": 4.6,
+    "downloads": 10000000,
+    "ratings": [
+      { "name": "1 star", "count": 7800 },
+      { "name": "2 star", "count": 11700 },
+      { "name": "3 star", "count": 23400 },
+      { "name": "4 star", "count": 62400 },
+      { "name": "5 star", "count": 284700 }
+    ]
+  },
+  {
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Canva_Logo.svg",
+    "title": "Canva",
+    "companyName": "Canva",
+    "id": 18,
+    "description": "Canva is a graphic design app for creating social media posts, presentations, videos, posters, logos, photo collages, and other visual content.",
+    "size": 110,
+    "reviews": 26900000,
+    "ratingAvg": 4.8,
+    "downloads": 500000000,
+    "ratings": [
+      { "name": "1 star", "count": 269000 },
+      { "name": "2 star", "count": 538000 },
+      { "name": "3 star", "count": 1076000 },
+      { "name": "4 star", "count": 3497000 },
+      { "name": "5 star", "count": 21520000 }
+    ]
+  },
+  {
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Zoom_Logo_2022.svg",
+    "title": "Zoom Workplace",
+    "companyName": "Zoom Video Communications, Inc.",
+    "id": 19,
+    "description": "Zoom Workplace is a collaboration app for video meetings, chat, phone calls, documents, calendars, whiteboards, and AI-powered meeting features.",
+    "size": 120,
+    "reviews": 4590000,
+    "ratingAvg": 4.1,
+    "downloads": 1000000000,
+    "ratings": [
+      { "name": "1 star", "count": 183600 },
+      { "name": "2 star", "count": 275400 },
+      { "name": "3 star", "count": 504900 },
+      { "name": "4 star", "count": 1055700 },
+      { "name": "5 star", "count": 2570400 }
+    ]
+  },
+  {
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Microsoft_Teams_Icon.svg",
+    "title": "Microsoft Teams",
+    "companyName": "Microsoft Corporation",
+    "id": 20,
+    "description": "Microsoft Teams is a collaboration app for chat, meetings, communities, calls, file sharing, tasks, calendars, and teamwork across devices.",
+    "size": 115,
+    "reviews": 8750000,
+    "ratingAvg": 4.6,
+    "downloads": 500000000,
+    "ratings": [
+      { "name": "1 star", "count": 175000 },
+      { "name": "2 star", "count": 262500 },
+      { "name": "3 star", "count": 525000 },
+      { "name": "4 star", "count": 1400000 },
+      { "name": "5 star", "count": 6387500 }
+    ]
+  }
+]
